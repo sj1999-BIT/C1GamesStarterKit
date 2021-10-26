@@ -44,16 +44,16 @@ class Attacker:
             else:
                 # They don't have many units in the front so lets figure out their least defended area and send Scouts there.
 
+                spawn_location_options = [[13, 0], [14, 0], [0, 13], [0, 14]]
                 # Only spawn Scouts every other turn
                 # Sending more at once is better since attacks can only hit a single scout at a time
                 if game_state.turn_number % 2 == 1:
-                    # To simplify we will just check sending them from back left and right
-                    scout_spawn_location_options = [[13, 0], [14, 0]]
-                    best_location = self.least_damage_spawn_location(game_state, scout_spawn_location_options)
+                    best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
                     game_state.attempt_spawn(SCOUT, best_location, 1000)
                 else:
                     # Now spawn demolishers like a no brainer
-                    game_state.attempt_spawn(DEMOLISHER, [24, 10], 1000)
+                    best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
+                    game_state.attempt_spawn(DEMOLISHER, best_location, 1000)
 
 
     def stall_with_interceptors(self, game_state):
