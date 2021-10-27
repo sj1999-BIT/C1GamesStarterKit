@@ -29,10 +29,10 @@ class Observer:
     #doesn't account for destruction of buildings, walls
     def min_health_for_attack(self):
         """
-        This function will return health needed to reach target edge without considering destruction of walls
+        This function will return health needed to reach target edge without considering shielding / destruction of walls / turrets
         It gets the path the unit will take then checks the damage along that path
         """
-        damages = []
+        damages = {}
         location_options = self.game_state.game_map.get_edge_locations(
             self.game_state.game_map.BOTTOM_LEFT) + self.game_state.game_map.get_edge_locations(self.game_state.game_map.BOTTOM_RIGHT)
 
@@ -47,18 +47,25 @@ class Observer:
             for path_location in path:
                 # Get number of enemy turrets that can attack each location and multiply by turret damage
                 damage += len(self.game_state.get_attackers(path_location, 0)) * gamelib.GameUnit(TURRET, self.game_state.config).damage_i
-                all_support_locations = self.game_state.game_map.get_locations_in_range(
-                    path_location, gamelib.GameUnit(SUPPORT, self.game_state.config).shieldRange)
+                """
+                all_support_locations = self.game_state.game_map.get_locations_in_range(path_location, gamelib.GameUnit(SUPPORT, self.game_state.config).shieldRange)
 
                 # Accumulates shield amount from support structures around location that can support each location
                 for support_location in all_support_locations:
                     for unit in self.game_state.game_map[support_location]:
                         if unit.shieldPerUnit > 0 and unit.player_index == 0:
                             damage -= unit.shieldPerUnit
-            damages.append(damage)
+                """
+            #Adds location for the key corresponding to damage
+            if damages.get(damage) is None:
+                damages[damage] = [location]
+            else:
+                temp = damages[damage]
+                temp.append(location)
+                damages[damage] = temp
 
-        # Now just return the location that takes least damage
-        return min(damages) / 15
+        # Now just return the dictionary of damages and locations
+        return damages
 
     def generate_our_attacker_location(self, game_state):
         """
