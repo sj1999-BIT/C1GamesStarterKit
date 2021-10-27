@@ -58,7 +58,7 @@ class Observer:
             damages.append(damage)
 
         # Now just return the location that takes least damage
-        return min(damages) / 15
+        return min(damages)
 
     def generate_our_attacker_location(self, game_state):
         """

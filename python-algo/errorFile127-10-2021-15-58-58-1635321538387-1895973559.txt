@@ -1,0 +1,28 @@
+Random seed: 9039757177371890484
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 0 of your custom algo strategy
+Could not spawn EI at location [24, 10]. Not enough resources.
+Performing turn 1 of your custom algo strategy
+Performing turn 2 of your custom algo strategy
+Performing turn 3 of your custom algo strategy
+Performing turn 4 of your custom algo strategy
+Performing turn 5 of your custom algo strategy
+Performing turn 6 of your custom algo strategy
+Performing turn 7 of your custom algo strategy
+Performing turn 8 of your custom algo strategy
+Traceback (most recent call last):
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\python-algo\algo_strategy.py", line 211, in <module>
+    algo.start()
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\python-algo\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\python-algo\algo_strategy.py", line 64, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\python-algo\gamelib\game_state.py", line 180, in submit_turn
+    send_command(build_string)
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\python-algo\gamelib\util.py", line 30, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='gbk'>
+OSError: [Errno 22] Invalid argument
