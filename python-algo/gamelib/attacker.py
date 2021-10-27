@@ -2,59 +2,83 @@ import random
 
 import gamelib
 
+def set_constants(config):
+    global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, REMOVE, UPGRADE, STRUCTURE_TYPES, ALL_UNITS, UNIT_TYPE_TO_INDEX, MP, SP
+    UNIT_TYPE_TO_INDEX = {}
+    WALL = config["unitInformation"][0]["shorthand"]
+    UNIT_TYPE_TO_INDEX[WALL] = 0
+    SUPPORT = config["unitInformation"][1]["shorthand"]
+    UNIT_TYPE_TO_INDEX[SUPPORT] = 1
+    TURRET = config["unitInformation"][2]["shorthand"]
+    UNIT_TYPE_TO_INDEX[TURRET] = 2
+    SCOUT = config["unitInformation"][3]["shorthand"]
+    UNIT_TYPE_TO_INDEX[SCOUT] = 3
+    DEMOLISHER = config["unitInformation"][4]["shorthand"]
+    UNIT_TYPE_TO_INDEX[DEMOLISHER] = 4
+    INTERCEPTOR = config["unitInformation"][5]["shorthand"]
+    UNIT_TYPE_TO_INDEX[INTERCEPTOR] = 5
+    REMOVE = config["unitInformation"][6]["shorthand"]
+    UNIT_TYPE_TO_INDEX[REMOVE] = 6
+    UPGRADE = config["unitInformation"][7]["shorthand"]
+    UNIT_TYPE_TO_INDEX[UPGRADE] = 7
 
+    ALL_UNITS = [SCOUT, DEMOLISHER, INTERCEPTOR, WALL, SUPPORT, TURRET]
+    STRUCTURE_TYPES = [WALL, SUPPORT, TURRET]
 class Attacker:
 
 
     def __init__(self, config, game_state):
         self.game_state = game_state
 
-        global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, REMOVE, UPGRADE, STRUCTURE_TYPES, ALL_UNITS, UNIT_TYPE_TO_INDEX, MP, SP
-        UNIT_TYPE_TO_INDEX = {}
-        WALL = config["unitInformation"][0]["shorthand"]
-        UNIT_TYPE_TO_INDEX[WALL] = 0
-        SUPPORT = config["unitInformation"][1]["shorthand"]
-        UNIT_TYPE_TO_INDEX[SUPPORT] = 1
-        TURRET = config["unitInformation"][2]["shorthand"]
-        UNIT_TYPE_TO_INDEX[TURRET] = 2
-        SCOUT = config["unitInformation"][3]["shorthand"]
-        UNIT_TYPE_TO_INDEX[SCOUT] = 3
-        DEMOLISHER = config["unitInformation"][4]["shorthand"]
-        UNIT_TYPE_TO_INDEX[DEMOLISHER] = 4
-        INTERCEPTOR = config["unitInformation"][5]["shorthand"]
-        UNIT_TYPE_TO_INDEX[INTERCEPTOR] = 5
-        REMOVE = config["unitInformation"][6]["shorthand"]
-        UNIT_TYPE_TO_INDEX[REMOVE] = 6
-        UPGRADE = config["unitInformation"][7]["shorthand"]
-        UNIT_TYPE_TO_INDEX[UPGRADE] = 7
-        MP = 1
-        SP = 0
-
-    def offense_decision(self, min_value, game_state, best_location):
+    def offense_decision(self, game_state, best_location):
         """
-        make a decision on whether an attack should be launched, and what to do
-        :param best_location: a least of location provided by the observer
-        :param min_value: min_value 0f Sp needed to launch a viable offense
-        :param game_state: the current state of the game
+        :param game_state:
+        :param best_location: a dictionary containing a min_value for keys and an array of locations
+        :return:
         """
-        if game_state.MP < min_value:
-            pass
-        else:
-            if game_state.turn_number < 5:
-                self.stall_with_interceptors(game_state)
+        safest_path_val = -10
+        for min_val in best_location.keys():
+            if min_val == 0:
+                # attack the weakness immediately
+                game_state.attempt_spawn(SCOUT, best_location.get(min_val), 1000)
+                break
             else:
-                # They don't have many units in the front so lets figure out their least defended area and send Scouts there.
-                # [[13, 0], [14, 0], [0, 13], [0, 14]]
-                # Only spawn Scouts every other turn
-                # Sending more at once is better since attacks can only hit a single scout at a time
-                if game_state.turn_number % 2 == 1:
-                    # best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
-                    game_state.attempt_spawn(SCOUT, best_location, 1000)
-                else:
-                    # Now spawn demolishers like a no brainer
-                    # best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
-                    game_state.attempt_spawn(DEMOLISHER, best_location, 1000)
+                if safest_path_val < 0 or min_val < safest_path_val:
+                    safest_path_val = min_val
+        if self.game_state.get_resource(MP, 0) > 16:
+            # [[13, 0], [14, 0], [0, 13], [0, 14]]
+            # Only spawn Scouts every other turn
+            # Sending more at once is better since attacks can only hit a single scout at a time
+            self.spawn_demo_scout_combo(self.get_a_location(best_location.get(safest_path_val)))
 
+    def get_a_location(self, location_array):
+        """
+        For now, just find a random location, in the future might need better management
+        :param location_array: an array of locations
+        :return: a location
+        """
+        deploy_index = random.randint(0, len(location_array) - 1)
+        return location_array[deploy_index]
+
+    def spawn_demo_scout_combo(self, location):
+        """
+        spawn squad of mobile units consisting of demolisher and scout
+        :param location: a coordination
+        :return: void
+        """
+        self.game_state.attempt_spawn(DEMOLISHER,location , 1)
+        if location[0] <= 13:
+            if location[0] == 13:
+                new_location = [location[0]-1, location[1]+1]
+            else:
+                new_location = [location[0]+1, location[1]-1]
+            self.game_state.attempt_spawn(DEMOLISHER, new_location, 1000)
+        else:
+            if location[0] == 14:
+                new_location = [location[0]+1, location[1]+1]
+            else:
+                new_location = [location[0]-1, location[1]-1]
+            self.game_state.attempt_spawn(DEMOLISHER, new_location, 1000)
 
     def stall_with_interceptors(self, game_state):
         """
@@ -69,7 +93,7 @@ class Attacker:
         deploy_locations = self.filter_blocked_locations(friendly_edges, game_state)
 
         # While we have remaining MP to spend lets send out interceptors randomly.
-        while game_state.get_resource(MP) >= game_state.type_cost(INTERCEPTOR)[MP] and len(deploy_locations) > 0:
+        while game_state.get_resource(MP, 0) >= game_state.type_cost(INTERCEPTOR)[MP] and len(deploy_locations) > 0:
             # Choose a random deploy location.
             deploy_index = random.randint(0, len(deploy_locations) - 1)
             deploy_location = deploy_locations[deploy_index]

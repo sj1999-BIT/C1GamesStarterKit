@@ -24,6 +24,9 @@ from .util import debug_write
 from .game_state import GameState
 from .unit import GameUnit
 from .game_map import GameMap
+from .defender import Defender
+from .attacker import Attacker
+from .observer import Observer
 
-__all__ = ["algocore", "game_state", "game_map", "navigation", "unit", "util"]
+__all__ = ["algocore", "game_state", "game_map", "navigation", "unit", "util", "defender", "attacker", "observer"]
  

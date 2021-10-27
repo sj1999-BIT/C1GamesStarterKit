@@ -55,6 +55,7 @@ class Observer:
                     for unit in self.game_state.game_map[support_location]:
                         if unit.shieldPerUnit > 0 and unit.player_index == 0:
                             damage -= unit.shieldPerUnit
+<<<<<<< HEAD
                 """
             #Adds location for the key corresponding to damage
             if damages.get(damage) is None:
@@ -66,6 +67,12 @@ class Observer:
 
         # Now just return the dictionary of damages and locations
         return damages
+=======
+            damages.append(damage)
+
+        # Now just return the location that takes least damage
+        return min(damages)
+>>>>>>> 6242b483a89b4f1d1417396faf6e34dc28d5c2fc
 
     def generate_our_attacker_location(self, game_state):
         """
