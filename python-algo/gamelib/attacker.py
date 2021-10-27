@@ -34,10 +34,10 @@ class Attacker:
         """
         make a decision on whether an attack should be launched, and what to do
         :param best_location: a least of location provided by the observer
-        :param min_value: min_value 0f Sp needed to launch a viable offense
+        :param min_value: min_value 0f Sp needed to launch a viable offense using a simple max scout
         :param game_state: the current state of the game
         """
-        if game_state.MP < min_value:
+        if game_state.MP < min_value / 15:
             pass
         else:
             if game_state.turn_number < 5:
