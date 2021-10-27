@@ -5,6 +5,8 @@ import warnings
 from sys import maxsize
 import json
 
+from gamelib.attacker import Attacker
+from gamelib.observer import Observer
 
 """
 Most of the algo code you write will be in this file unless you create new
@@ -57,7 +59,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         gamelib.debug_write('Performing turn {} of your custom algo strategy'.format(game_state.turn_number))
         game_state.suppress_warnings(True)  #Comment or remove this line to enable warnings.
 
-        self.starter_strategy(game_state)
+        self.our_strategy(game_state)
 
         game_state.submit_turn()
 
@@ -67,7 +69,7 @@ class AlgoStrategy(gamelib.AlgoCore):
     strategy and can safely be replaced for your custom algo.
     """
 
-    def starter_strategy(self, game_state):
+    def our_strategy(self, game_state):
         """
         For defense we will use a spread out layout and some interceptors early on.
         We will place turrets near locations the opponent managed to score on.
@@ -78,29 +80,22 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.build_defences(game_state)
         # Now build reactive defenses based on where the enemy scored
         self.build_reactive_defense(game_state)
+        # Lastly, if we have spare SP, let's build some supports
+        support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
+        game_state.attempt_spawn(SUPPORT, support_locations)
 
-        # If the turn is less than 5, stall with interceptors and wait to see enemy's base
-        if game_state.turn_number < 5:
-            self.stall_with_interceptors(game_state)
+        # creation of the three objects
+        attacker = Attacker(self.config, game_state)
+        observer = Observer(self.config, game_state)
+
+        min_value = observer.min_health_for_attack()
+        if len(observer.generate_our_attacker_location(game_state)) == 0:
+            spawn_location_options = [[13, 0], [14, 0], [0, 13], [0, 14]]
+            best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
+            attacker.offense_decision(min_value, game_state, best_location)
         else:
-            # Now let's analyze the enemy base to see where their defenses are concentrated.
-            # If they have many units in the front we can build a line for our demolishers to attack them at long range.
-            if self.detect_enemy_unit(game_state, unit_type=None, valid_x=None, valid_y=[14, 15]) > 10:
-                self.demolisher_line_strategy(game_state)
-            else:
-                # They don't have many units in the front so lets figure out their least defended area and send Scouts there.
+            attacker.offense_decision(min_value, game_state, observer.generate_our_attacker_location(game_state))
 
-                # Only spawn Scouts every other turn
-                # Sending more at once is better since attacks can only hit a single scout at a time
-                if game_state.turn_number % 2 == 1:
-                    # To simplify we will just check sending them from back left and right
-                    scout_spawn_location_options = [[13, 0], [14, 0]]
-                    best_location = self.least_damage_spawn_location(game_state, scout_spawn_location_options)
-                    game_state.attempt_spawn(SCOUT, best_location, 1000)
-
-                # Lastly, if we have spare SP, let's build some supports
-                support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
-                game_state.attempt_spawn(SUPPORT, support_locations)
 
     def build_defences(self, game_state):
         """
@@ -154,28 +149,6 @@ class AlgoStrategy(gamelib.AlgoCore):
             We don't have to remove the location since multiple mobile 
             units can occupy the same space.
             """
-
-    def demolisher_line_strategy(self, game_state):
-        """
-        Build a line of the cheapest stationary unit so our demolisher can attack from long range.
-        """
-        # First let's figure out the cheapest unit
-        # We could just check the game rules, but this demonstrates how to use the GameUnit class
-        stationary_units = [WALL, TURRET, SUPPORT]
-        cheapest_unit = WALL
-        for unit in stationary_units:
-            unit_class = gamelib.GameUnit(unit, game_state.config)
-            if unit_class.cost[game_state.MP] < gamelib.GameUnit(cheapest_unit, game_state.config).cost[game_state.MP]:
-                cheapest_unit = unit
-
-        # Now let's build out a line of stationary units. This will prevent our demolisher from running into the enemy base.
-        # Instead they will stay at the perfect distance to attack the front two rows of the enemy base.
-        for x in range(27, 5, -1):
-            game_state.attempt_spawn(cheapest_unit, [x, 11])
-
-        # Now spawn demolishers next to the line
-        # By asking attempt_spawn to spawn 1000 units, it will essentially spawn as many as we have resources for
-        game_state.attempt_spawn(DEMOLISHER, [24, 10], 1000)
 
     def least_damage_spawn_location(self, game_state, location_options):
         """
