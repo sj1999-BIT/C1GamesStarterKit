@@ -2,33 +2,20 @@ import random
 
 import gamelib
 
-def set_constants(config):
-    global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, REMOVE, UPGRADE, STRUCTURE_TYPES, ALL_UNITS, UNIT_TYPE_TO_INDEX, MP, SP
-    UNIT_TYPE_TO_INDEX = {}
-    WALL = config["unitInformation"][0]["shorthand"]
-    UNIT_TYPE_TO_INDEX[WALL] = 0
-    SUPPORT = config["unitInformation"][1]["shorthand"]
-    UNIT_TYPE_TO_INDEX[SUPPORT] = 1
-    TURRET = config["unitInformation"][2]["shorthand"]
-    UNIT_TYPE_TO_INDEX[TURRET] = 2
-    SCOUT = config["unitInformation"][3]["shorthand"]
-    UNIT_TYPE_TO_INDEX[SCOUT] = 3
-    DEMOLISHER = config["unitInformation"][4]["shorthand"]
-    UNIT_TYPE_TO_INDEX[DEMOLISHER] = 4
-    INTERCEPTOR = config["unitInformation"][5]["shorthand"]
-    UNIT_TYPE_TO_INDEX[INTERCEPTOR] = 5
-    REMOVE = config["unitInformation"][6]["shorthand"]
-    UNIT_TYPE_TO_INDEX[REMOVE] = 6
-    UPGRADE = config["unitInformation"][7]["shorthand"]
-    UNIT_TYPE_TO_INDEX[UPGRADE] = 7
-
-    ALL_UNITS = [SCOUT, DEMOLISHER, INTERCEPTOR, WALL, SUPPORT, TURRET]
-    STRUCTURE_TYPES = [WALL, SUPPORT, TURRET]
 class Attacker:
 
 
     def __init__(self, config, game_state):
         self.game_state = game_state
+        global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, MP, SP
+        WALL = config["unitInformation"][0]["shorthand"]
+        SUPPORT = config["unitInformation"][1]["shorthand"]
+        TURRET = config["unitInformation"][2]["shorthand"]
+        SCOUT = config["unitInformation"][3]["shorthand"]
+        DEMOLISHER = config["unitInformation"][4]["shorthand"]
+        INTERCEPTOR = config["unitInformation"][5]["shorthand"]
+        MP = 1
+        SP = 0
 
     def offense_decision(self, game_state, best_location):
         """
@@ -66,7 +53,13 @@ class Attacker:
         :param location: a coordination
         :return: void
         """
-        self.game_state.attempt_spawn(DEMOLISHER,location , 1)
+
+        if self.game_state.get_resource(SP, 1) > 12:
+            # high chance of an upgraded turret
+            self.game_state.attempt_spawn(DEMOLISHER, location, 2)
+        else:
+            self.game_state.attempt_spawn(DEMOLISHER, location, 1)
+
         if location[0] <= 13:
             if location[0] == 13:
                 new_location = [location[0]-1, location[1]+1]
