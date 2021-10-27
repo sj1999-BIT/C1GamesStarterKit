@@ -30,11 +30,12 @@ class Attacker:
         MP = 1
         SP = 0
 
-    def offense_decision(self, min_value, game_state):
+    def offense_decision(self, min_value, game_state, best_location):
         """
         make a decision on whether an attack should be launched, and what to do
-        :param min_value:
-        :param game_state:
+        :param best_location: a least of location provided by the observer
+        :param min_value: min_value 0f Sp needed to launch a viable offense
+        :param game_state: the current state of the game
         """
         if game_state.MP < min_value:
             pass
@@ -43,16 +44,15 @@ class Attacker:
                 self.stall_with_interceptors(game_state)
             else:
                 # They don't have many units in the front so lets figure out their least defended area and send Scouts there.
-
-                spawn_location_options = [[13, 0], [14, 0], [0, 13], [0, 14]]
+                # [[13, 0], [14, 0], [0, 13], [0, 14]]
                 # Only spawn Scouts every other turn
                 # Sending more at once is better since attacks can only hit a single scout at a time
                 if game_state.turn_number % 2 == 1:
-                    best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
+                    # best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
                     game_state.attempt_spawn(SCOUT, best_location, 1000)
                 else:
                     # Now spawn demolishers like a no brainer
-                    best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
+                    # best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
                     game_state.attempt_spawn(DEMOLISHER, best_location, 1000)
 
 
