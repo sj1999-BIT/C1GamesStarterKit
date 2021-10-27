@@ -91,14 +91,14 @@ class AlgoStrategy(gamelib.AlgoCore):
         # creation of the three objects
         attacker = Attacker(self.config, game_state)
         observer = Observer(self.config, game_state)
-        #
-        # min_value = observer.min_health_for_attack()
-        # if len(observer.generate_our_attacker_location(game_state)) == 0:
-        #     spawn_location_options = [[13, 0], [14, 0], [0, 13], [0, 14]]
-        #     best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
-        #     attacker.offense_decision(min_value, game_state, best_location)
-        # else:
-        #     attacker.offense_decision(min_value, game_state, observer.generate_our_attacker_location(game_state))
+
+        min_value = observer.min_health_for_attack()
+        if len(observer.generate_our_attacker_location(game_state)) == 0:
+            spawn_location_options = [[13, 0], [14, 0], [0, 13], [0, 14]]
+            best_location = self.least_damage_spawn_location(game_state, spawn_location_options)
+            attacker.offense_decision(min_value, game_state, best_location)
+        else:
+            attacker.offense_decision(min_value, game_state, observer.generate_our_attacker_location(game_state))
 
     def build_defences(self, game_state):
         """
