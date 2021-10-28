@@ -46,6 +46,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         SP = 0
         # This is a good place to do initial setup
         self.scored_on_locations = []
+        self.damaged_turrets = {}
+        self.dead_turrets = []
 
         self.defender = gamelib.Defender(config)
 
@@ -90,9 +92,9 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         # creation of the three objects
         attacker = Attacker(self.config, game_state)
-        observer = Observer(self.config, game_state)
+        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets)
 
-        attacker.offense_decision(game_state, observer.generate_our_attacker_location(game_state))
+        attacker.offense_decision(game_state, observer.min_health_for_attack(game_state))
 
     def build_defences(self, game_state):
         """
@@ -196,6 +198,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         state = json.loads(turn_string)
         events = state["events"]
         breaches = events["breach"]
+        damages = events["damage"]
+        deaths = events["death"]
         for breach in breaches:
             location = breach[0]
             unit_owner_self = True if breach[4] == 1 else False
@@ -205,6 +209,32 @@ class AlgoStrategy(gamelib.AlgoCore):
                 gamelib.debug_write("Got scored on at: {}".format(location))
                 self.scored_on_locations.append(location)
                 gamelib.debug_write("All locations: {}".format(self.scored_on_locations))
+
+        for damage in damages:
+            location = damage[0]
+            damage_taken = damage[1]
+            unit_owner_self = True if damage[4] == 1 else False
+            # When parsing the frame data directly,
+            # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
+            if unit_owner_self:
+                gamelib.debug_write("Turret damaged at: {}".format(location))
+                if location in self.damaged_turrets:
+                    self.damaged_turrets[location] += damage_taken
+                else:
+                    self.damaged_turrets[location] = damage_taken
+
+        for death in deaths:
+            location = death[0]
+            unit_owner_self = True if death[3] == 1 else False
+            removed_by_owner = death[4]
+            # When parsing the frame data directly,
+            # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
+            if unit_owner_self and not removed_by_owner:
+                # Removes it from the damaged dict
+                self.damaged_turrets.pop(location, None)
+                gamelib.debug_write("Turret death at: {}".format(location))
+                self.dead_turrets.append(location)
+
 
 
 if __name__ == "__main__":
