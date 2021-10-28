@@ -82,13 +82,11 @@ class AlgoStrategy(gamelib.AlgoCore):
         """
         # # First, place basic defenses
         # self.build_defences(game_state)
-        # # Now build reactive defenses based on where the enemy scored
-        # self.build_reactive_defense(game_state)
         # # Lastly, if we have spare SP, let's build some supports
         # support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
         # game_state.attempt_spawn(SUPPORT, support_locations)
 
-        self.defender.update_state(game_state)
+        self.defender.update_state(game_state, self.scored_on_locations)
 
         # creation of the three objects
         attacker = Attacker(self.config, game_state)
@@ -114,17 +112,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.attempt_spawn(WALL, wall_locations)
         # upgrade walls so they soak more damage
         game_state.attempt_upgrade(wall_locations)
-
-    def build_reactive_defense(self, game_state):
-        """
-        This function builds reactive defenses based on where the enemy scored on us from.
-        We can track where the opponent scored by looking at events in action frames 
-        as shown in the on_action_frame function
-        """
-        for location in self.scored_on_locations:
-            # Build turret one space above so that it doesn't block our own edge spawn locations
-            build_location = [location[0], location[1] + 1]
-            game_state.attempt_spawn(TURRET, build_location)
 
     def stall_with_interceptors(self, game_state):
         """

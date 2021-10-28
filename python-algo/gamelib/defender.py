@@ -21,17 +21,23 @@ def set_constants(config):
     ALL_UNITS = [SCOUT, DEMOLISHER, INTERCEPTOR, WALL, SUPPORT, TURRET]
     STRUCTURE_TYPES = [WALL, SUPPORT, TURRET]
 
+
 class Defender:
     def __init__(self, config):
         self.config = config
         set_constants(config)
         self.game_state = None
+        self.scored_on_locations = []
 
-    def update_state(self, game_state):
+    def update_state(self, game_state, scored_on_locations):
         self.game_state = game_state
+        self.scored_on_locations = scored_on_locations
 
         self.defend_left_right_side()
         self.defend_center_region()
+
+        # # Now build reactive defenses based on where the enemy scored
+        self.build_reactive_defense()
 
     def defend_left_right_side(self):
         locations = []
@@ -64,3 +70,14 @@ class Defender:
         # Build supports afterwards
         for x in x_coords:
             self.game_state.attempt_spawn(SUPPORT, [(x, self.game_state.HALF_ARENA - 3)])
+
+    def build_reactive_defense(self):
+        """
+        This function builds reactive defenses based on where the enemy scored on us from.
+        We can track where the opponent scored by looking at events in action frames
+        as shown in the on_action_frame function
+        """
+        for location in self.scored_on_locations:
+            # Build turret one space above so that it doesn't block our own edge spawn locations
+            build_location = [location[0], location[1] + 1]
+            self.game_state.attempt_spawn(TURRET, build_location)
