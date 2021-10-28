@@ -211,7 +211,7 @@ class AlgoStrategy(gamelib.AlgoCore):
                 gamelib.debug_write("All locations: {}".format(self.scored_on_locations))
 
         for damage in damages:
-            location = damage[0]
+            location = tuple(damage[0])
             damage_taken = damage[1]
             unit_owner_self = True if damage[4] == 1 else False
             # When parsing the frame data directly,
@@ -224,7 +224,7 @@ class AlgoStrategy(gamelib.AlgoCore):
                     self.damaged_turrets[tuple(location)] = damage_taken
 
         for death in deaths:
-            location = death[0]
+            location = tuple(death[0])
             unit_owner_self = True if death[3] == 1 else False
             removed_by_owner = death[4]
             # When parsing the frame data directly,
