@@ -65,13 +65,13 @@ class Attacker:
                 new_location = [location[0]-1, location[1]+1]
             else:
                 new_location = [location[0]+1, location[1]-1]
-            self.game_state.attempt_spawn(DEMOLISHER, new_location, 1000)
+            self.game_state.attempt_spawn(SCOUT, new_location, 1000)
         else:
             if location[0] == 14:
                 new_location = [location[0]+1, location[1]+1]
             else:
                 new_location = [location[0]-1, location[1]-1]
-            self.game_state.attempt_spawn(DEMOLISHER, new_location, 1000)
+            self.game_state.attempt_spawn(SCOUT, new_location, 1000)
 
     def stall_with_interceptors(self, game_state):
         """
