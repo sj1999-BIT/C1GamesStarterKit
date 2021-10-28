@@ -130,16 +130,13 @@ class Observer:
         """
         This function will return a dictionary of locations and damage of damaged friendly turrets.
         """
-        return None
+        return self.damaged_turrets
 
     def get_destroyed_structures(self, game_state):
         """
         This function will return a list of locations of destroyed friendly turrets.
         """
-        return None
-
-
-
+        return self.dead_turrets
 
     def filter_blocked_locations(self, locations, game_state):
         filtered = []

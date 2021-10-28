@@ -92,7 +92,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         # creation of the three objects
         attacker = Attacker(self.config, game_state)
-        observer = Observer(self.config, game_state)
+        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets)
 
         attacker.offense_decision(game_state, observer.min_health_for_attack(game_state))
 
@@ -230,6 +230,8 @@ class AlgoStrategy(gamelib.AlgoCore):
             # When parsing the frame data directly,
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
             if unit_owner_self and not removed_by_owner:
+                # Removes it from the damaged dict
+                self.damaged_turrets.pop(location, None)
                 gamelib.debug_write("Turret death at: {}".format(location))
                 self.dead_turrets.append(location)
 
