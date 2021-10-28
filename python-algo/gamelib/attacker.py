@@ -5,8 +5,7 @@ import gamelib
 class Attacker:
 
 
-    def __init__(self, config, game_state):
-        self.game_state = game_state
+    def __init__(self, config):
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, MP, SP
         WALL = config["unitInformation"][0]["shorthand"]
         SUPPORT = config["unitInformation"][1]["shorthand"]
@@ -17,26 +16,34 @@ class Attacker:
         MP = 1
         SP = 0
 
-    def offense_decision(self, game_state, best_location):
+    def offense_decision(self, game_state, best_location, past_data_stored):
         """
+        :param past_data_stored: the dataStorageUnit presented in the system
         :param game_state:
         :param best_location: a dictionary containing a min_value for keys and an array of locations
         :return:
         """
         safest_path_val = -10
-        for min_val in best_location.keys():
-            if min_val == 0:
-                # attack the weakness immediately
-                game_state.attempt_spawn(SCOUT, best_location.get(min_val), 1000)
-                break
-            else:
-                if safest_path_val < 0 or min_val < safest_path_val:
-                    safest_path_val = min_val
-        if self.game_state.get_resource(MP, 0) > 16:
-            # [[13, 0], [14, 0], [0, 13], [0, 14]]
-            # Only spawn Scouts every other turn
-            # Sending more at once is better since attacks can only hit a single scout at a time
-            self.spawn_demo_scout_combo(self.get_a_location(best_location.get(safest_path_val)))
+        # gamelib.debug_write("dictionary location is {}".format(len(best_location.keys())))
+        if game_state.get_resource(MP, 0) > past_data_stored.min_mobile_units_needed:
+            for min_val in best_location.keys():
+                if min_val == 0:
+                    # attack the weakness immediately
+                    game_state.attempt_spawn(SCOUT, best_location.get(min_val), 1000)
+                    break
+                else:
+                    if safest_path_val < 0 or min_val < safest_path_val:
+                        safest_path_val = min_val
+            if game_state.get_resource(MP, 0) > safest_path_val / 15:
+                if best_location.get(safest_path_val) is not None:
+                    gamelib.debug_write("bes location is {}".format(safest_path_val))
+                    self.spawn_demo_scout_combo(self.get_a_location(best_location.get(safest_path_val)), game_state)
+        else:
+            # no enough resources to start an offense, for now just sent an interceptor on highest chance of attack
+            intercept_location = past_data_stored.chances_of_opponent_attack(game_state)
+            if len(intercept_location) > 0:
+                game_state.attempt_spawn(INTERCEPTOR, intercept_location, 1)
+
 
     def get_a_location(self, location_array):
         """
@@ -47,31 +54,31 @@ class Attacker:
         deploy_index = random.randint(0, len(location_array) - 1)
         return location_array[deploy_index]
 
-    def spawn_demo_scout_combo(self, location):
+    def spawn_demo_scout_combo(self, location, game_state):
         """
         spawn squad of mobile units consisting of demolisher and scout
         :param location: a coordination
         :return: void
         """
 
-        if self.game_state.get_resource(SP, 1) > 12:
+        if game_state.get_resource(SP, 1) > 12:
             # high chance of an upgraded turret
-            self.game_state.attempt_spawn(DEMOLISHER, location, 2)
+            game_state.attempt_spawn(DEMOLISHER, location, 2)
         else:
-            self.game_state.attempt_spawn(DEMOLISHER, location, 1)
+            game_state.attempt_spawn(DEMOLISHER, location, 1)
 
         if location[0] <= 13:
             if location[0] == 13:
                 new_location = [location[0]-1, location[1]+1]
             else:
                 new_location = [location[0]+1, location[1]-1]
-            self.game_state.attempt_spawn(SCOUT, new_location, 1000)
+            game_state.attempt_spawn(SCOUT, new_location, 1000)
         else:
             if location[0] == 14:
                 new_location = [location[0]+1, location[1]+1]
             else:
                 new_location = [location[0]-1, location[1]-1]
-            self.game_state.attempt_spawn(SCOUT, new_location, 1000)
+            game_state.attempt_spawn(SCOUT, new_location, 1000)
         gamelib.debug_write("new location to spawn scout at: {}".format(new_location))
 
     def stall_with_interceptors(self, game_state):
