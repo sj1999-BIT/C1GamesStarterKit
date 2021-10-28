@@ -1,8 +1,10 @@
 import gamelib
 
 class Observer:
-    def __init__(self, config, game_state):
+    def __init__(self, config, game_state, damaged_turrets, dead_turrets):
         self.game_state = game_state
+        self.damaged_turrets = damaged_turrets
+        self.dead_turrets = dead_turrets
 
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, REMOVE, UPGRADE, STRUCTURE_TYPES, ALL_UNITS, UNIT_TYPE_TO_INDEX, MP, SP
         UNIT_TYPE_TO_INDEX = {}
@@ -25,28 +27,26 @@ class Observer:
         MP = 1
         SP = 0
 
-
-    #doesn't account for destruction of buildings, walls
-    def min_health_for_attack(self):
+    def min_health_for_attack(self, game_state):
         """
         This function will return health needed to reach target edge without considering shielding / destruction of walls / turrets
         It gets the path the unit will take then checks the damage along that path
         """
         damages = {}
-        location_options = self.game_state.game_map.get_edge_locations(
-            self.game_state.game_map.BOTTOM_LEFT) + self.game_state.game_map.get_edge_locations(self.game_state.game_map.BOTTOM_RIGHT)
+        location_options = game_state.game_map.get_edge_locations(
+            game_state.game_map.BOTTOM_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.BOTTOM_RIGHT)
 
         # Remove locations that are blocked by our own structures
         # since we can't deploy units there.
-        location_options = self.filter_blocked_locations(location_options, self.game_state)
+        location_options = self.filter_blocked_locations(location_options, game_state)
 
         # Get the damage estimate each path will take
         for location in location_options:
-            path = self.game_state.find_path_to_edge(location)
+            path = game_state.find_path_to_edge(location)
             damage = 0
             for path_location in path:
                 # Get number of enemy turrets that can attack each location and multiply by turret damage
-                damage += len(self.game_state.get_attackers(path_location, 0)) * gamelib.GameUnit(TURRET, self.game_state.config).damage_i
+                damage += len(game_state.get_attackers(path_location, 0)) * gamelib.GameUnit(TURRET, game_state.config).damage_i
                 """
                 all_support_locations = self.game_state.game_map.get_locations_in_range(path_location, gamelib.GameUnit(SUPPORT, self.game_state.config).shieldRange)
 
@@ -55,9 +55,8 @@ class Observer:
                     for unit in self.game_state.game_map[support_location]:
                         if unit.shieldPerUnit > 0 and unit.player_index == 0:
                             damage -= unit.shieldPerUnit
-<<<<<<< HEAD
                 """
-            #Adds location for the key corresponding to damage
+            # Adds location for the key corresponding to damage
             if damages.get(damage) is None:
                 damages[damage] = [location]
             else:
@@ -65,14 +64,9 @@ class Observer:
                 temp.append(location)
                 damages[damage] = temp
 
-        # Now just return the dictionary of damages and locations
+        # return the dictionary of damages and locations
+        print(damages)
         return damages
-=======
-            damages.append(damage)
-
-        # Now just return the location that takes least damage
-        return min(damages)
->>>>>>> 6242b483a89b4f1d1417396faf6e34dc28d5c2fc
 
     def generate_our_attacker_location(self, game_state):
         """
@@ -99,7 +93,7 @@ class Observer:
             if damage == 0:
                 spawn_location.append(location)
 
-        # Now just return the location that does not take damage
+        # Now just return the spawn locations that do not take damage
         return spawn_location
 
     def our_weakness_location(self, game_state):
@@ -115,6 +109,8 @@ class Observer:
         # since we can't deploy units there.
         location_options = self.filter_blocked_locations(location_options, game_state)
 
+        vulnerable_locations = []
+
         # Get the damage estimate each path will take
         for location in location_options:
             path = game_state.find_path_to_edge(location)
@@ -124,10 +120,26 @@ class Observer:
                 damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,
                                                                                              game_state.config).damage_i
             if damage == 0:
-                spawn_location.append(location)
+                for path_location in path:
+                    vulnerable_locations.append(path_location)
 
         # Now just return the location that does not take damage
         return spawn_location
+
+    def get_damaged_structures(self, game_state):
+        """
+        This function will return a dictionary of locations and damage of damaged friendly turrets.
+        """
+        return None
+
+    def get_destroyed_structures(self, game_state):
+        """
+        This function will return a list of locations of destroyed friendly turrets.
+        """
+        return None
+
+
+
 
     def filter_blocked_locations(self, locations, game_state):
         filtered = []
