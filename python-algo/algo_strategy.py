@@ -211,28 +211,27 @@ class AlgoStrategy(gamelib.AlgoCore):
                 gamelib.debug_write("All locations: {}".format(self.scored_on_locations))
 
         for damage in damages:
-            location = damage[0]
+            location = tuple(damage[0])
             damage_taken = damage[1]
             unit_owner_self = True if damage[4] == 1 else False
             # When parsing the frame data directly,
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
             if unit_owner_self:
                 gamelib.debug_write("Turret damaged at: {}".format(location))
-                tuple_location = tuple(location)
-                if tuple_location in self.damaged_turrets:
-                    self.damaged_turrets[tuple_location] += damage_taken
+                if location in self.damaged_turrets:
+                    self.damaged_turrets[location] += damage_taken
                 else:
-                    self.damaged_turrets[tuple_location] = damage_taken
+                    self.damaged_turrets[location] = damage_taken
 
         for death in deaths:
-            location = death[0]
+            location = tuple(death[0])
             unit_owner_self = True if death[3] == 1 else False
             removed_by_owner = death[4]
             # When parsing the frame data directly,
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
             if unit_owner_self and not removed_by_owner:
                 # Removes it from the damaged dict
-                self.damaged_turrets.pop(tuple(location), None)
+                self.damaged_turrets.pop(location, None)
                 gamelib.debug_write("Turret death at: {}".format(location))
                 self.dead_turrets.append(location)
 
