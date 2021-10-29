@@ -1,4 +1,3 @@
-import null
 import gamelib
 import random
 
@@ -15,15 +14,15 @@ class DataStorage:
         MP = 1
         SP = 0
 
-        self.previous_game_state = null
+        self.previous_game_state = None
         # store the dictionary to keys min_health_val to each coordinates
-        self.dict_for_attack_path = null
+        self.dict_for_attack_path = None
         # store the list of structures and their coordinates that have been damaged
-        self.list_record_for_our_damaged_structure = null
+        self.list_record_for_our_damaged_structure = None
         # store the list of structures and their coordinates that have been destroyed
-        self.list_record_for_our_destroyed_structure = null
+        self.list_record_for_our_destroyed_structure = None
         # store a dictionary of locations and how much dmg is done using that location for attack
-        self.previous_attack_result = null
+        self.previous_attack_result = None
         # predict future possible attack location
         self.chance_of_attack = {}
         # set an adjustable value of attack units
