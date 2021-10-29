@@ -30,8 +30,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         gamelib.debug_write('Random seed: {}'.format(seed))
 
     def on_game_start(self, config):
-        """ 
-        Read in config and perform any initial setup here 
+        """
+        Read in config and perform any initial setup here
         """
         gamelib.debug_write('Configuring your custom algo strategy...')
         self.config = config
@@ -49,6 +49,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.damaged_turrets = {}
         self.dead_turrets = set()
         self.defender = gamelib.Defender(config)
+
+        self.past_history_stored = gamelib.DataStorage(config)
 
     def on_turn(self, turn_state):
         """
@@ -88,11 +90,14 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         self.defender.update_state(game_state, self.scored_on_locations)
 
+        self.past_history_stored.learning_and_update_info(game_state, self.damaged_turrets)
+
+
         # creation of the three objects
         attacker = Attacker(self.config)
         observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets)
 
-        attacker.offense_decision(game_state, observer.min_health_for_attack(game_state))
+        attacker.offense_decision(game_state, observer.min_health_for_attack(game_state), self.past_history_stored)
 
     def build_defences(self, game_state):
         """
@@ -121,7 +126,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         friendly_edges = game_state.game_map.get_edge_locations(
             game_state.game_map.BOTTOM_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.BOTTOM_RIGHT)
 
-        # Remove locations that are blocked by our own structures 
+        # Remove locations that are blocked by our own structures
         # since we can't deploy units there.
         deploy_locations = self.filter_blocked_locations(friendly_edges, game_state)
 
@@ -140,7 +145,7 @@ class AlgoStrategy(gamelib.AlgoCore):
     def least_damage_spawn_location(self, game_state, location_options):
         """
         This function will help us guess which location is the safest to spawn moving units from.
-        It gets the path the unit will take then checks locations on that path to 
+        It gets the path the unit will take then checks locations on that path to
         estimate the path's damage risk.
         """
         damages = []
@@ -176,7 +181,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
     def on_action_frame(self, turn_string):
         """
-        This is the action frame of the game. This function could be called 
+        This is the action frame of the game. This function could be called
         hundreds of times per turn and could slow the algo down so avoid putting slow code here.
         Processing the action frames is complicated so we only suggest it if you have time and experience.
         Full doc on format of a game frame at in json-docs.html in the root of the Starterkit.
@@ -190,7 +195,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         for breach in breaches:
             location = breach[0]
             unit_owner_self = True if breach[4] == 1 else False
-            # When parsing the frame data directly, 
+            # When parsing the frame data directly,
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
             if not unit_owner_self:
                 gamelib.debug_write("Got scored on at: {}".format(location))

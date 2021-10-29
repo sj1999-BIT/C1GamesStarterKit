@@ -27,6 +27,7 @@ from .game_map import GameMap
 from .defender import Defender
 from .attacker import Attacker
 from .observer import Observer
+from .dataStorage import DataStorage
 
 __all__ = ["algocore", "game_state", "game_map", "navigation", "unit", "util", "defender", "attacker", "observer"]
  
