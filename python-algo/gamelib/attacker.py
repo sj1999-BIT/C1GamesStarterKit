@@ -1,4 +1,5 @@
 import random
+from math import floor
 
 import gamelib
 
@@ -29,15 +30,18 @@ class Attacker:
             for min_val in best_location.keys():
                 if min_val == 0:
                     # attack the weakness immediately
-                    game_state.attempt_spawn(SCOUT, best_location.get(min_val), 1000)
+                    gamelib.debug_write("spawn scouts")
+                    game_state.attempt_spawn(SCOUT, best_location.get(min_val), floor(game_state.get_resource(MP, 0)))
                     break
                 else:
                     if safest_path_val < 0 or min_val < safest_path_val:
                         safest_path_val = min_val
-            if game_state.get_resource(MP, 0) > safest_path_val / 15:
-                if best_location.get(safest_path_val) is not None:
+            if safest_path_val > 0:
+                tuple_combo = self.get_health_for_combo(game_state)
+
+                if best_location.get(safest_path_val) is not None and tuple_combo[2] >= safest_path_val:
                     gamelib.debug_write("bes location is {}".format(safest_path_val))
-                    self.spawn_demo_scout_combo(self.get_a_location(best_location.get(safest_path_val)), game_state)
+                    self.spawn_demo_scout_combo(self.get_a_location(best_location.get(safest_path_val)), game_state, tuple_combo)
         else:
             # no enough resources to start an offense, for now just sent an interceptor on highest chance of attack
             intercept_location = past_data_stored.chances_of_opponent_attack(game_state)
@@ -54,31 +58,44 @@ class Attacker:
         deploy_index = random.randint(0, len(location_array) - 1)
         return location_array[deploy_index]
 
-    def spawn_demo_scout_combo(self, location, game_state):
-        """
-        spawn squad of mobile units consisting of demolisher and scout
-        :param location: a coordination
-        :return: void
-        """
+    def get_health_for_combo(self, game_state):
 
         if game_state.get_resource(SP, 1) > 12:
             # high chance of an upgraded turret
-            game_state.attempt_spawn(DEMOLISHER, location, 2)
+            demolisher_count = 2
         else:
-            game_state.attempt_spawn(DEMOLISHER, location, 1)
+            demolisher_count = 1
+
+        scout_count = floor(game_state.get_resource(MP, 0) - demolisher_count * 3)
+        total_health_val = scout_count * 15 + demolisher_count * 5
+
+        return tuple((scout_count, demolisher_count, total_health_val))
+
+
+    def spawn_demo_scout_combo(self, location, game_state, tuple_combo):
+        """
+        spawn squad of mobile units consisting of demolisher and scout
+
+        :param location: a coordination
+        :param game_state: current game state
+        :param tuple_combo: tuple containing (scout_count, demolisher_count)
+        :return:
+        """
+
+        game_state.attempt_spawn(DEMOLISHER, location, tuple_combo[1])
 
         if location[0] <= 13:
             if location[0] == 13:
                 new_location = [location[0]-1, location[1]+1]
             else:
                 new_location = [location[0]+1, location[1]-1]
-            game_state.attempt_spawn(SCOUT, new_location, 1000)
+            game_state.attempt_spawn(SCOUT, new_location, tuple_combo[0])
         else:
             if location[0] == 14:
                 new_location = [location[0]+1, location[1]+1]
             else:
                 new_location = [location[0]-1, location[1]-1]
-            game_state.attempt_spawn(SCOUT, new_location, 1000)
+            game_state.attempt_spawn(SCOUT, new_location, tuple_combo[0])
         gamelib.debug_write("new location to spawn scout at: {}".format(new_location))
 
     def stall_with_interceptors(self, game_state):
