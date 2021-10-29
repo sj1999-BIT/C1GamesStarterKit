@@ -47,8 +47,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         # This is a good place to do initial setup
         self.scored_on_locations = []
         self.damaged_turrets = {}
-        self.dead_turrets = []
-
+        self.dead_turrets = set()
         self.defender = gamelib.Defender(config)
 
     def on_turn(self, turn_state):
@@ -67,6 +66,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.our_strategy(game_state)
 
         game_state.submit_turn()
+        self.dead_turrets = set()
 
     """
     NOTE: All the methods after this point are part of the sample starter-algo
@@ -82,13 +82,11 @@ class AlgoStrategy(gamelib.AlgoCore):
         """
         # # First, place basic defenses
         # self.build_defences(game_state)
-        # # Now build reactive defenses based on where the enemy scored
-        # self.build_reactive_defense(game_state)
         # # Lastly, if we have spare SP, let's build some supports
         # support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
         # game_state.attempt_spawn(SUPPORT, support_locations)
 
-        self.defender.update_state(game_state)
+        self.defender.update_state(game_state, self.scored_on_locations)
 
         # creation of the three objects
         attacker = Attacker(self.config, game_state)
@@ -114,17 +112,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.attempt_spawn(WALL, wall_locations)
         # upgrade walls so they soak more damage
         game_state.attempt_upgrade(wall_locations)
-
-    def build_reactive_defense(self, game_state):
-        """
-        This function builds reactive defenses based on where the enemy scored on us from.
-        We can track where the opponent scored by looking at events in action frames 
-        as shown in the on_action_frame function
-        """
-        for location in self.scored_on_locations:
-            # Build turret one space above so that it doesn't block our own edge spawn locations
-            build_location = [location[0], location[1] + 1]
-            game_state.attempt_spawn(TURRET, build_location)
 
     def stall_with_interceptors(self, game_state):
         """
@@ -214,10 +201,10 @@ class AlgoStrategy(gamelib.AlgoCore):
             location = tuple(damage[0])
             damage_taken = damage[1]
             unit_owner_self = True if damage[4] == 1 else False
+            unit_is_turret = True if damage[2] == 2 else False
             # When parsing the frame data directly,
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
-            if unit_owner_self:
-                gamelib.debug_write("Turret damaged at: {}".format(location))
+            if unit_owner_self and unit_is_turret:
                 if tuple(location) in self.damaged_turrets:
                     self.damaged_turrets[tuple(location)] += damage_taken
                 else:
@@ -226,14 +213,14 @@ class AlgoStrategy(gamelib.AlgoCore):
         for death in deaths:
             location = tuple(death[0])
             unit_owner_self = True if death[3] == 1 else False
+            unit_is_turret = True if death[1] == 2 else False
             removed_by_owner = death[4]
             # When parsing the frame data directly,
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
-            if unit_owner_self and not removed_by_owner:
+            if unit_owner_self and not removed_by_owner and unit_is_turret:
                 # Removes it from the damaged dict
                 self.damaged_turrets.pop(tuple(location), None)
-                gamelib.debug_write("Turret death at: {}".format(location))
-                self.dead_turrets.append(location)
+                self.dead_turrets.add(location)
 
 
 
