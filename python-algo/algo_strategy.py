@@ -89,7 +89,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.defender.update_state(game_state, self.scored_on_locations)
 
         # creation of the three objects
-        attacker = Attacker(self.config, game_state)
+        attacker = Attacker(self.config)
         observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets)
 
         attacker.offense_decision(game_state, observer.min_health_for_attack(game_state))
