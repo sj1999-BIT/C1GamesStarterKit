@@ -167,9 +167,9 @@ class Observer:
             if damage < min_damage:
                 min_damage = damage
                 intercepter_spawn_location.clear()
-                intercepter_spawn_location.append(location)
+                intercepter_spawn_location.append(edge)
             elif damage == min_damage:
-                intercepter_spawn_location.append(location)
+                intercepter_spawn_location.append(edge)
 
         # Now just return the location that does not take damage
         return intercepter_spawn_location
