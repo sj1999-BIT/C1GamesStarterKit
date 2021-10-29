@@ -65,7 +65,9 @@ class Observer:
                 damages[damage] = temp
 
         # return the dictionary of damages and locations
-        print(damages)
+        gamelib.debug_write("Debug: {}".format(damages))
+        if len(damages) == 0:
+            gamelib.debug_write("DANGER")
         return damages
 
     def generate_our_attacker_location(self, game_state):
@@ -101,7 +103,6 @@ class Observer:
         This function will return spawn locations that will not take any damage for enemy mobile units.
         Works similar to function for friendly units
         """
-        spawn_location = []
         location_options = game_state.game_map.get_edge_locations(
             game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
 
@@ -120,11 +121,10 @@ class Observer:
                 damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,
                                                                                              game_state.config).damage_i
             if damage == 0:
-                for path_location in path:
-                    vulnerable_locations.append(path_location)
+                vulnerable_locations.append(path_location[-4])
 
         # Now just return the location that does not take damage
-        return spawn_location
+        return vulnerable_locations
 
     def get_damaged_structures(self, game_state):
         """
@@ -137,6 +137,42 @@ class Observer:
         This function will return a list of locations of destroyed friendly turrets.
         """
         return self.dead_turrets
+
+    def spawn_location_for_intercepter(self, game_state):
+        """
+        This function will return spawn locations for intercepters. It first calculates the most probable enemy spawn location, then
+        the most suitable friendly spawn location for intercepting the attack.
+        """
+        intercepter_spawn_location = []
+        location_options = game_state.game_map.get_edge_locations(
+            game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+
+        # Remove locations that are blocked by enemy structures
+        # since we can't deploy units there.
+        location_options = self.filter_blocked_locations(location_options, game_state)
+
+        vulnerable_locations = []
+
+        min_damage = 10000000
+        # Get the damage estimate each path will take
+        for location in location_options:
+            path = game_state.find_path_to_edge(location)
+            edge = game_state.get_target_edge(location)
+
+            damage = 0
+            for path_location in path:
+                # Get number of friendly turrets that can attack each location and multiply by turret damage
+                damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,
+                                                                                             game_state.config).damage_i
+            if damage < min_damage:
+                min_damage = damage
+                intercepter_spawn_location.clear()
+                intercepter_spawn_location.append(location)
+            elif damage == min_damage:
+                intercepter_spawn_location.append(location)
+
+        # Now just return the location that does not take damage
+        return intercepter_spawn_location
 
     def filter_blocked_locations(self, locations, game_state):
         filtered = []

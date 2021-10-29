@@ -47,8 +47,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         # This is a good place to do initial setup
         self.scored_on_locations = []
         self.damaged_turrets = {}
-        self.dead_turrets = []
-
+        self.dead_turrets = set()
         self.defender = gamelib.Defender(config)
 
     def on_turn(self, turn_state):
@@ -67,6 +66,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.our_strategy(game_state)
 
         game_state.submit_turn()
+        self.dead_turrets = set()
 
     """
     NOTE: All the methods after this point are part of the sample starter-algo
@@ -201,26 +201,26 @@ class AlgoStrategy(gamelib.AlgoCore):
             location = tuple(damage[0])
             damage_taken = damage[1]
             unit_owner_self = True if damage[4] == 1 else False
+            unit_is_turret = True if damage[2] == 2 else False
             # When parsing the frame data directly,
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
-            if unit_owner_self:
-                gamelib.debug_write("Turret damaged at: {}".format(location))
-                if location in self.damaged_turrets:
-                    self.damaged_turrets[location] += damage_taken
+            if unit_owner_self and unit_is_turret:
+                if tuple(location) in self.damaged_turrets:
+                    self.damaged_turrets[tuple(location)] += damage_taken
                 else:
-                    self.damaged_turrets[location] = damage_taken
+                    self.damaged_turrets[tuple(location)] = damage_taken
 
         for death in deaths:
             location = tuple(death[0])
             unit_owner_self = True if death[3] == 1 else False
+            unit_is_turret = True if death[1] == 2 else False
             removed_by_owner = death[4]
             # When parsing the frame data directly,
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
-            if unit_owner_self and not removed_by_owner:
+            if unit_owner_self and not removed_by_owner and unit_is_turret:
                 # Removes it from the damaged dict
-                self.damaged_turrets.pop(location, None)
-                gamelib.debug_write("Turret death at: {}".format(location))
-                self.dead_turrets.append(location)
+                self.damaged_turrets.pop(tuple(location), None)
+                self.dead_turrets.add(location)
 
 
 
