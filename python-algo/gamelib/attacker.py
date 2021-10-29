@@ -27,7 +27,7 @@ class Attacker:
         safest_path_val = -10
         # gamelib.debug_write("dictionary location is {}".format(len(best_location.keys())))
         if game_state.get_resource(MP, 0) > past_data_stored.min_mobile_units_needed:
-            for min_val in best_location.keys():
+            for min_val in min(best_location.keys()):
                 if min_val == 0:
                     # attack the weakness immediately
                     gamelib.debug_write("spawn scouts")
@@ -36,9 +36,9 @@ class Attacker:
                 else:
                     if safest_path_val < 0 or min_val < safest_path_val:
                         safest_path_val = min_val
+
             if safest_path_val > 0:
                 tuple_combo = self.get_health_for_combo(game_state)
-
                 if best_location.get(safest_path_val) is not None and tuple_combo[2] >= safest_path_val:
                     gamelib.debug_write("bes location is {}".format(safest_path_val))
                     self.spawn_demo_scout_combo(self.get_a_location(best_location.get(safest_path_val)), game_state, tuple_combo)
