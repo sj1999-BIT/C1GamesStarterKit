@@ -90,7 +90,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         # support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
         # game_state.attempt_spawn(SUPPORT, support_locations)
 
-        self.defender.update_state(game_state, self.scored_on_locations)
+        self.defender.update_state(game_state, self.scored_on_locations, self.damaged_turrets)
 
         # creation of the three objects
         attacker = Attacker(self.config)
