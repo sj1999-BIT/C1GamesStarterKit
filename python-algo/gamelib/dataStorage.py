@@ -62,6 +62,10 @@ class DataStorage:
         # set a list of number of times under utilized structure locations
         self.safe_from_defence_location = []
 
+        # set a int for limit to turn into delay attack mode
+        self.fail_attack_limit = 0
+        self.is_delay_attack_mode = False
+
 
 
     def learning_and_update_info(self, game_state, attacked_locations, observer):
@@ -96,6 +100,13 @@ class DataStorage:
             deploy_index = random.randint(0, len(self.blacklisted_location) - 1)
             self.blacklisted_location.remove(self.blacklisted_location[deploy_index])
 
+        if self.fail_attack_limit > 5:
+            self.fail_attack_limit = 0
+            if not self.is_delay_attack_mode:
+                self.fail_attack_limit = True
+            else:
+                self.fail_attack_limit = False
+
 
 
 
@@ -129,6 +140,7 @@ class DataStorage:
         if self.enemy_health == self.cur_game_state.enemy_health:
             self.blacklisted_location.extend(self.previous_attack_location)
             self.min_mobile_units_needed += 1
+            self.fail_attack_limit += 1
         else:
             self.min_mobile_units_needed = (MP_used_for_attack + self.min_mobile_units_needed) / 2
 
