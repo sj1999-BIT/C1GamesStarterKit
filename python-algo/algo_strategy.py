@@ -48,6 +48,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.scored_on_locations = []
         self.damaged_turrets = {}
         self.dead_turrets = set()
+        self.omitted_spawn_locations = set()
+        self.opponent_mp = []
         self.defender = gamelib.Defender(config)
 
         self.past_history_stored = gamelib.DataStorage(config)
@@ -95,7 +97,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         # creation of the three objects
         attacker = Attacker(self.config)
-        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets)
+        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets, self.omitted_spawn_locations, self.opponent_mp)
 
         attacker.offense_decision(game_state, observer.min_health_for_attack(game_state), self.past_history_stored)
 
@@ -192,6 +194,9 @@ class AlgoStrategy(gamelib.AlgoCore):
         breaches = events["breach"]
         damages = events["damage"]
         deaths = events["death"]
+        spawns = events["spawn"]
+        self.opponent_mp.append(state["p2Stats"][2])
+
         for breach in breaches:
             location = breach[0]
             unit_owner_self = True if breach[4] == 1 else False
@@ -227,7 +232,21 @@ class AlgoStrategy(gamelib.AlgoCore):
                 self.damaged_turrets.pop(tuple(location), None)
                 self.dead_turrets.add(location)
 
+        opponent_attacked = False
 
+        for spawn in spawns:
+            location = tuple(spawn[0])
+            is_intercepter = True if spawn[1] == 5 else False
+            is_scout = True if spawn[1] == 3 else False
+            is_demolisher = True if spawn[1] == 4 else False
+            unit_owner_self = True if spawn[3] == 1 else False
+            if is_intercepter and not unit_owner_self:
+                self.omitted_spawn_locations.add(location)
+            if (is_scout or is_demolisher) and not unit_owner_self:
+                opponent_attacked = True
+
+        if not opponent_attacked:
+            self.opponent_mp.pop()
 
 if __name__ == "__main__":
     algo = AlgoStrategy()

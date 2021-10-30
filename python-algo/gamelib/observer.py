@@ -1,10 +1,12 @@
 import gamelib
 
 class Observer:
-    def __init__(self, config, game_state, damaged_turrets, dead_turrets):
+    def __init__(self, config, game_state, damaged_turrets, dead_turrets, omitted_spawn_locations, opponent_mp):
         self.game_state = game_state
         self.damaged_turrets = damaged_turrets
         self.dead_turrets = dead_turrets
+        self.omitted_spawn_locations = omitted_spawn_locations
+        self.opponent_mp = opponent_mp
 
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, REMOVE, UPGRADE, STRUCTURE_TYPES, ALL_UNITS, UNIT_TYPE_TO_INDEX, MP, SP
         UNIT_TYPE_TO_INDEX = {}
@@ -39,6 +41,7 @@ class Observer:
         # Remove locations that are blocked by our own structures
         # since we can't deploy units there.
         location_options = self.filter_blocked_locations(location_options, game_state)
+        location_options = self.filter_omitted_locations(location_options, game_state)
 
         # Get the damage estimate each path will take
         for location in location_options:
@@ -157,7 +160,7 @@ class Observer:
         # Get the damage estimate each path will take
         for location in location_options:
             path = game_state.find_path_to_edge(location)
-            edge = game_state.get_target_edge(location)
+            edge = path[-1]
 
             damage = 0
             for path_location in path:
@@ -180,3 +183,20 @@ class Observer:
             if not game_state.contains_stationary_unit(location):
                 filtered.append(location)
         return filtered
+
+    def filter_omitted_locations(self, locations, game_state):
+        filtered = []
+        for location in locations:
+            path = game_state.find_path_to_edge(location)
+            edge = path[-1]
+            ommit = False
+            for ommited_location in self.omitted_spawn_locations:
+                distance = game_state.game_map.distance_between_locations(list(ommited_location), edge)
+                if distance <= 2:
+                    ommit = True
+            if not ommit:
+                filtered.append(location)
+        return filtered
+
+    def opponent_attack_mp(self):
+        return sum(self.opponent_mp)/len(self.opponent_mp)
