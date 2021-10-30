@@ -16,6 +16,7 @@ class Attacker:
         INTERCEPTOR = config["unitInformation"][5]["shorthand"]
         MP = 1
         SP = 0
+        self.cur_attacked_location = []
 
     def offense_decision(self, game_state, best_location, past_data_stored):
         """
@@ -24,29 +25,75 @@ class Attacker:
         :param best_location: a dictionary containing a min_value for keys and an array of locations
         :return:
         """
+        # only record the attacked location this round
+        self.cur_attacked_location = []
         safest_path_val = -10
         # gamelib.debug_write("dictionary location is {}".format(len(best_location.keys())))
         if game_state.get_resource(MP, 0) > past_data_stored.min_mobile_units_needed:
-            for min_val in min(best_location.keys()):
+            for min_val in best_location:
+
+                # check if the locations present are not recorded as blacklist
+                list_of_locations = best_location.get(min_val)
+                for illegal_locations in past_data_stored.blacklisted_location:
+                    list_of_locations.remove(illegal_locations)
+                if len(list_of_locations) == 0:
+                    pass
+
                 if min_val == 0:
                     # attack the weakness immediately
                     gamelib.debug_write("spawn scouts")
                     game_state.attempt_spawn(SCOUT, best_location.get(min_val), floor(game_state.get_resource(MP, 0)))
-                    break
                 else:
                     if safest_path_val < 0 or min_val < safest_path_val:
                         safest_path_val = min_val
 
             if safest_path_val > 0:
                 tuple_combo = self.get_health_for_combo(game_state)
-                if best_location.get(safest_path_val) is not None and tuple_combo[2] >= safest_path_val:
-                    gamelib.debug_write("bes location is {}".format(safest_path_val))
-                    self.spawn_demo_scout_combo(self.get_a_location(best_location.get(safest_path_val)), game_state, tuple_combo)
-        else:
-            # no enough resources to start an offense, for now just sent an interceptor on highest chance of attack
-            intercept_location = past_data_stored.chances_of_opponent_attack(game_state)
-            if len(intercept_location) > 0:
-                game_state.attempt_spawn(INTERCEPTOR, intercept_location, 1)
+                if best_location.get(safest_path_val) is not None:
+                    target_spawn_location = self.get_a_location(best_location.get(safest_path_val))
+                    if tuple_combo[2] > safest_path_val:
+                        # the combo can punch through opponent frontline
+                        gamelib.debug_write("bes location is {}".format(safest_path_val))
+                        self.spawn_demo_scout_combo(target_spawn_location, game_state, tuple_combo)
+                    else:
+                        demolisher_count = self.demolish_strategy(game_state, past_data_stored)
+                        # since we cannot tell if the demolisher is effective, we can only guess
+                        if demolisher_count > 0:
+                            game_state.attempt_spawn(DEMOLISHER, target_spawn_location, demolisher_count)
+
+    def demolish_strategy(self, game_state, past_data_stored):
+        """
+        utilise a percentage of our current resources to create a team only for demolisher
+        :param game_state:
+        :param past_data_stored:
+        :return:
+        """
+        MP_owned = game_state.get_resource(MP, 0)
+        return floor(MP_owned * past_data_stored.percent_MP_for_demolition / 3)
+
+
+    def interception_strategy(self, game_state, past_data_stored):
+
+        # assume opponent will not attack
+        if game_state.get_resource(MP, 1) < past_data_stored.min_MP_enemy_needed:
+            pass
+
+        # find highest possible point of interception
+        highest_val = -10
+        intercept_location = None
+        # dictionary chance_of_attack has tuple as key and int as val
+        if past_data_stored.chance_of_attack is not None:
+            for location in past_data_stored.chance_of_attack:
+                chance = past_data_stored.chance_of_attack.get(location)
+                if chance > highest_val:
+                    highest_val = chance
+                    intercept_location = location
+
+        # idea is that we only attack if we do not have enough SP or too much MP
+        if intercept_location is not None and game_state.get_resource(SP, 0) < 5 \
+                and game_state.get_resource(MP, 0) > past_data_stored.max_MP_enemy_needed:
+            intercept_location = list(intercept_location)
+            game_state.attempt_spawn(INTERCEPTOR, intercept_location, 1)
 
 
     def get_a_location(self, location_array):
@@ -98,30 +145,6 @@ class Attacker:
             game_state.attempt_spawn(SCOUT, new_location, tuple_combo[0])
         gamelib.debug_write("new location to spawn scout at: {}".format(new_location))
 
-    def stall_with_interceptors(self, game_state):
-        """
-        Send out interceptors at random locations to defend our base from enemy moving units.
-        """
-        # We can spawn moving units on our edges so a list of all our edge locations
-        friendly_edges = game_state.game_map.get_edge_locations(
-            game_state.game_map.BOTTOM_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.BOTTOM_RIGHT)
-
-        # Remove locations that are blocked by our own structures
-        # since we can't deploy units there.
-        deploy_locations = self.filter_blocked_locations(friendly_edges, game_state)
-
-        # While we have remaining MP to spend lets send out interceptors randomly.
-        while game_state.get_resource(MP, 0) >= game_state.type_cost(INTERCEPTOR)[MP] and len(deploy_locations) > 0:
-            # Choose a random deploy location.
-            deploy_index = random.randint(0, len(deploy_locations) - 1)
-            deploy_location = deploy_locations[deploy_index]
-
-            game_state.attempt_spawn(INTERCEPTOR, deploy_location)
-            """
-            We don't have to remove the location since multiple mobile 
-            units can occupy the same space.
-            """
-
     def least_damage_spawn_location(self, game_state, location_options):
         """
         This function will help us guess which location is the safest to spawn moving units from.
@@ -142,15 +165,6 @@ class Attacker:
         # Now just return the location that takes the least damage
         return location_options[damages.index(min(damages))]
 
-    def detect_enemy_unit(self, game_state, unit_type=None, valid_x=None, valid_y=None):
-        total_units = 0
-        for location in game_state.game_map:
-            if game_state.contains_stationary_unit(location):
-                for unit in game_state.game_map[location]:
-                    if unit.player_index == 1 and (unit_type is None or unit.unit_type == unit_type) and (
-                            valid_x is None or location[0] in valid_x) and (valid_y is None or location[1] in valid_y):
-                        total_units += 1
-        return total_units
 
     def filter_blocked_locations(self, locations, game_state):
         filtered = []
