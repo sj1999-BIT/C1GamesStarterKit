@@ -27,10 +27,10 @@ class DataStorage:
         self.enemy_health = 30
 
         # store the list of structures and their coordinates that have been damaged
-        self.list_record_for_our_damaged_structure = None
+        self.list_record_for_our_damaged_structure = []
 
         # store the list of structures and their coordinates that have been destroyed
-        self.list_record_for_our_destroyed_structure = None
+        self.list_record_for_our_destroyed_structure = []
 
         # store a dictionary of locations and how much dmg is done using that location for attack
         self.previous_attack_location = []
@@ -52,6 +52,19 @@ class DataStorage:
 
         # set a list of blackListed location to not attacked again
         self.blacklisted_location = []
+
+        # set a list of locations that have interceptor spawned
+        self.cur_interceptor_location = []
+
+        # set a dict of number of times under utilized structure locations
+        self.times_under_used_structure_locations = {}
+
+        # set a list of number of times under utilized structure locations
+        self.safe_from_defence_location = []
+
+        # set a int for limit to turn into delay attack mode
+        self.fail_attack_limit = 0
+        self.is_delay_attack_mode = False
 
 
 
@@ -87,6 +100,14 @@ class DataStorage:
             deploy_index = random.randint(0, len(self.blacklisted_location) - 1)
             self.blacklisted_location.remove(self.blacklisted_location[deploy_index])
 
+        if self.fail_attack_limit > 5:
+            self.fail_attack_limit = 0
+            if not self.is_delay_attack_mode:
+                self.fail_attack_limit = True
+            else:
+                self.fail_attack_limit = False
+
+
 
 
     def update_future_interception_prediction(self, attacked_locations):
@@ -119,8 +140,27 @@ class DataStorage:
         if self.enemy_health == self.cur_game_state.enemy_health:
             self.blacklisted_location.extend(self.previous_attack_location)
             self.min_mobile_units_needed += 1
+            self.fail_attack_limit += 1
         else:
             self.min_mobile_units_needed = (MP_used_for_attack + self.min_mobile_units_needed) / 2
+
+    def update_underused(self, under_used_locations):
+        for locations in under_used_locations:
+            tuple_location = tuple(locations)
+            if tuple_location in self.times_under_used_structure_locations.keys():
+                val = self.times_under_used_structure_locations.get(tuple_location) + 1
+                if val >= 3:
+                    self.times_under_used_structure_locations.pop(tuple_location)
+                    self.safe_from_defence_location.extend([locations, ])
+                else:
+                    self.times_under_used_structure_locations.update({tuple_location: val})
+
+        # remove safed location by chance
+        should_location_free = random.randint(0, 9) > 5
+        if should_location_free:
+            deploy_index = random.randint(0, len(self.safe_from_defence_location) - 1)
+            self.safe_from_defence_location.remove(self.safe_from_defence_location[deploy_index])
+
 
 
 
