@@ -51,7 +51,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.omitted_spawn_locations = set()
         self.opponent_mp = []
         self.defender = gamelib.Defender(config)
-
+        self.attacker = gamelib.Attacker(self.config)
         self.past_history_stored = gamelib.DataStorage(config)
 
     def on_turn(self, turn_state):
@@ -89,16 +89,25 @@ class AlgoStrategy(gamelib.AlgoCore):
         # # Lastly, if we have spare SP, let's build some supports
         # support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
         # game_state.attempt_spawn(SUPPORT, support_locations)
+        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets)
+        self.past_history_stored.learning_and_update_info(game_state, self.scored_on_locations, observer)
+        self.past_history_stored.is_attack_effective()
 
+        self.attacker.interception_strategy(game_state, self.past_history_stored)
         self.defender.update_state(game_state, self.scored_on_locations)
+<<<<<<< Updated upstream
 
         # creation of the three objects
         attacker = Attacker(self.config)
         observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets, self.omitted_spawn_locations, self.opponent_mp)
 
         self.past_history_stored.learning_and_update_info(game_state, self.damaged_turrets, observer)
+=======
+        # creation of the three objects
+>>>>>>> Stashed changes
 
-        attacker.offense_decision(game_state, observer.min_health_for_attack(game_state), self.past_history_stored)
+        self.attacker.offense_decision(game_state, observer.min_health_for_attack(game_state), self.past_history_stored)
+
 
     def build_defences(self, game_state):
         """
