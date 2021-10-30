@@ -69,11 +69,13 @@ class Defender:
 
         # Build turrets first
         for x in x_coords:
-            self.game_state.attempt_spawn(TURRET, [(x, self.game_state.HALF_ARENA - 2)])
+            self.game_state.attempt_spawn(TURRET, (x, self.game_state.HALF_ARENA - 2))
+            self.game_state.attempt_spawn(WALL, (x, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_upgrade((x, self.game_state.HALF_ARENA - 1))
 
         # Build supports afterwards
         for x in x_coords:
-            self.game_state.attempt_spawn(SUPPORT, [(x, self.game_state.HALF_ARENA - 3)])
+            self.game_state.attempt_spawn(SUPPORT, (x, self.game_state.HALF_ARENA - 3))
 
     def build_reactive_defense(self):
         """
@@ -92,6 +94,6 @@ class Defender:
         for damaged_turret in self.damaged_turrets:
             for dx, dy in deltas:
                 success = self.game_state.attempt_spawn(SUPPORT,
-                                                        [(damaged_turret[0][0] + dx, damaged_turret[0][1] + dy)])
+                                                        (damaged_turret[0][0] + dx, damaged_turret[0][1] + dy))
                 if success:
                     break
