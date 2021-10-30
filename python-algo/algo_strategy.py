@@ -79,32 +79,22 @@ class AlgoStrategy(gamelib.AlgoCore):
 
     def our_strategy(self, game_state):
         """
-        For defense we will use a spread out layout and some interceptors early on.
-        We will place turrets near locations the opponent managed to score on.
-        For offense we will use long range demolishers if they place stationary units near the enemy's front.
-        If there are no stationary units to attack in the front, we will send Scouts to try and score quickly.
+        First, we will update the observer and data storage unit
+        Then we will place any interceptors
+        Then we will update our defence
+        Then we will construct our attack if necessary
+        :param game_state:
+        :return:
         """
-        # # First, place basic defenses
-        # self.build_defences(game_state)
-        # # Lastly, if we have spare SP, let's build some supports
-        # support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
-        # game_state.attempt_spawn(SUPPORT, support_locations)
-        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets)
+        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets,
+                            self.omitted_spawn_locations, self.opponent_mp)
         self.past_history_stored.learning_and_update_info(game_state, self.scored_on_locations, observer)
         self.past_history_stored.is_attack_effective()
 
-        self.attacker.interception_strategy(game_state, self.past_history_stored)
-        self.defender.update_state(game_state, self.scored_on_locations)
-<<<<<<< Updated upstream
+        self.attacker.interception_strategy(game_state, self.past_history_stored,
+                                            observer.spawn_location_for_intercepter(game_state))
 
-        # creation of the three objects
-        attacker = Attacker(self.config)
-        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets, self.omitted_spawn_locations, self.opponent_mp)
-
-        self.past_history_stored.learning_and_update_info(game_state, self.damaged_turrets, observer)
-=======
-        # creation of the three objects
->>>>>>> Stashed changes
+        self.defender.update_state(game_state, self.scored_on_locations, self.damaged_turrets)
 
         self.attacker.offense_decision(game_state, observer.min_health_for_attack(game_state), self.past_history_stored)
 

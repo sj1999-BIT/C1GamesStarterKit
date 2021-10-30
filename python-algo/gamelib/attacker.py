@@ -38,7 +38,7 @@ class Attacker:
                 if len(list_of_locations) > 0:
                     for location in list_of_locations:
                         if location not in past_data_stored.blacklisted_location:
-                            if min_val == 0:
+                            if min_val == 0 and game_state.get_resource(SP, 1) < 6:
                                 # attack the weakness immediately
                                 gamelib.debug_write("spawn scouts")
                                 game_state.attempt_spawn(SCOUT, self.get_a_location(best_location.get(min_val)), floor(game_state.get_resource(MP, 0)))
@@ -78,8 +78,9 @@ class Attacker:
         return floor(MP_owned * past_data_stored.percent_MP_for_demolition / 3)
 
 
-    def interception_strategy(self, game_state, past_data_stored):
+    def interception_strategy(self, game_state, past_data_stored, best_location):
 
+        """
         # assume opponent will not attack
         if game_state.get_resource(MP, 1) < past_data_stored.min_MP_enemy_needed:
             pass
@@ -99,7 +100,11 @@ class Attacker:
         if intercept_location is not None and game_state.get_resource(SP, 0) < 5 \
                 and game_state.get_resource(MP, 0) > past_data_stored.max_MP_enemy_needed:
             intercept_location = list(intercept_location)
-            game_state.attempt_spawn(INTERCEPTOR, intercept_location, 1)
+        """
+        if best_location is not None and game_state.get_resource(SP, 0) < 5 \
+                and game_state.get_resource(MP, 0) > past_data_stored.max_MP_enemy_needed:
+            game_state.attempt_spawn(INTERCEPTOR, best_location, 1)
+        past_data_stored.cur_interceptor_location.extend([best_location, ])
 
 
     def get_a_location(self, location_array):

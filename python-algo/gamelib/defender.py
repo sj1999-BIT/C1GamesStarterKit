@@ -28,16 +28,20 @@ class Defender:
         set_constants(config)
         self.game_state = None
         self.scored_on_locations = []
+        self.damaged_turrets = {}
 
-    def update_state(self, game_state, scored_on_locations):
+    def update_state(self, game_state, scored_on_locations, damaged_turrets):
         self.game_state = game_state
         self.scored_on_locations = scored_on_locations
+        self.damaged_turrets = list(sorted(list(damaged_turrets.items()), key=lambda x: x[1], reverse=True))
 
         self.defend_left_right_side()
         self.defend_center_region()
 
-        # # Now build reactive defenses based on where the enemy scored
+        # Now build reactive defenses based on where the enemy scored
         self.build_reactive_defense()
+
+        self.support_damaged_structures()
 
     def defend_left_right_side(self):
         locations = []
@@ -65,11 +69,13 @@ class Defender:
 
         # Build turrets first
         for x in x_coords:
-            self.game_state.attempt_spawn(TURRET, [(x, self.game_state.HALF_ARENA - 2)])
+            self.game_state.attempt_spawn(TURRET, (x, self.game_state.HALF_ARENA - 2))
+            self.game_state.attempt_spawn(WALL, (x, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_upgrade((x, self.game_state.HALF_ARENA - 1))
 
         # Build supports afterwards
         for x in x_coords:
-            self.game_state.attempt_spawn(SUPPORT, [(x, self.game_state.HALF_ARENA - 3)])
+            self.game_state.attempt_spawn(SUPPORT, (x, self.game_state.HALF_ARENA - 3))
 
     def build_reactive_defense(self):
         """
@@ -81,3 +87,13 @@ class Defender:
             # Build turret one space above so that it doesn't block our own edge spawn locations
             build_location = [location[0], location[1] + 1]
             self.game_state.attempt_spawn(TURRET, build_location)
+
+    def support_damaged_structures(self):
+        # Try 4 different positions
+        deltas = ((0, -1), (1, 0), (-1, 0), (0, 1))
+        for damaged_turret in self.damaged_turrets:
+            for dx, dy in deltas:
+                success = self.game_state.attempt_spawn(SUPPORT,
+                                                        (damaged_turret[0][0] + dx, damaged_turret[0][1] + dy))
+                if success:
+                    break
