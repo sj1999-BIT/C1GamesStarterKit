@@ -48,6 +48,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.scored_on_locations = []
         self.damaged_turrets = {}
         self.dead_turrets = set()
+        self.useless_turrets = []
         self.omitted_spawn_locations = set()
         self.opponent_mp = []
         self.defender = gamelib.Defender(config)
@@ -95,6 +96,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         # creation of the three objects
         attacker = Attacker(self.config)
         observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets, self.omitted_spawn_locations, self.opponent_mp)
+        test = observer.useful_turrets(game_state)
 
         self.past_history_stored.learning_and_update_info(game_state, self.damaged_turrets, observer)
 
@@ -191,7 +193,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         state = json.loads(turn_string)
         events = state["events"]
         breaches = events["breach"]
-        damages = events["damage"]
+        friendly_turrets = state["p2Units"][2]
         deaths = events["death"]
         spawns = events["spawn"]
         self.opponent_mp.append(state["p2Stats"][2])
@@ -206,18 +208,12 @@ class AlgoStrategy(gamelib.AlgoCore):
                 self.scored_on_locations.append(location)
                 gamelib.debug_write("All locations: {}".format(self.scored_on_locations))
 
-        for damage in damages:
-            location = tuple(damage[0])
-            damage_taken = damage[1]
-            unit_owner_self = True if damage[4] == 1 else False
-            unit_is_turret = True if damage[2] == 2 else False
-            # When parsing the frame data directly,
-            # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
-            if unit_owner_self and unit_is_turret:
-                if tuple(location) in self.damaged_turrets:
-                    self.damaged_turrets[tuple(location)] += damage_taken
-                else:
-                    self.damaged_turrets[tuple(location)] = damage_taken
+        self.damaged_turrets.clear()
+        for turret in friendly_turrets:
+            location = (turret[0], turret[1])
+            damage = 75 - turret[2]
+            if damage > 0:
+                self.damaged_turrets[tuple(location)] = damage
 
         for death in deaths:
             location = tuple(death[0])

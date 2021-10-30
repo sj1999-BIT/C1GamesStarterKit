@@ -198,5 +198,49 @@ class Observer:
                 filtered.append(location)
         return filtered
 
-    def opponent_attack_mp(self):
+    def tilted_formation(self, game_state):
+        location_options = game_state.game_map.get_edge_locations(
+            game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+
+        location_count = []
+
+        # Get the damage estimate each path will take
+        for location in location_options:
+            path = game_state.find_path_to_edge(location)
+            for path_location in path:
+                if path_location[1] == 14:
+                    location_count.append(path_location[0])
+                    break
+        all_left = True
+        all_right = True
+        for location in location_count:
+            if location <= 13:
+                all_right = False
+            if location > 13:
+                all_left = False
+
+        average = sum(location_count) / len(location_count)
+
+        if all_right or all_left:
+            return average
+        else:
+            return -1
+
+    def useful_turrets(self, game_state):
+        location_options = game_state.game_map.get_edge_locations(
+            game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+
+        useful_turrets = set()
+        # Get the damage estimate each path will take
+        for location in location_options:
+            path = game_state.find_path_to_edge(location)
+            if path == None:
+                continue
+            for path_location in path:
+                defenders = game_state.get_attackers(path_location, 1)
+                for defender in defenders:
+                    useful_turrets.add(tuple([defender.x, defender.y]))
+        return useful_turrets
+
+    def average_opponent_attack_mp(self):
         return sum(self.opponent_mp)/len(self.opponent_mp)
