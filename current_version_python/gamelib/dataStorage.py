@@ -33,7 +33,7 @@ class DataStorage:
         self.list_record_for_our_destroyed_structure = None
 
         # store a dictionary of locations and how much dmg is done using that location for attack
-        self.previous_attack_result = None
+        self.previous_attack_location = []
 
         # predict future possible attack location
         self.chance_of_attack = {}
@@ -59,7 +59,7 @@ class DataStorage:
         """
         Update the values in the storage unit
         :param game_state:
-        :param attacked_locations:
+        :param attacked_locations: places attacked by the opponent
         :param observer:
         :return:
         """
@@ -81,6 +81,11 @@ class DataStorage:
         # for now we don't have observer's function, we guess if its been attacked
         if len(observer.damaged_turrets) > 0:
             self.min_mobile_units_needed = (self.previous_opponent_MP + self.min_MP_enemy_needed) / 2
+
+        # remove a random blacklisted location to prevent total unable to offense
+        if (len(self.blacklisted_location)) > 0:
+            deploy_index = random.randint(0, len(self.blacklisted_location) - 1)
+            self.blacklisted_location.remove(self.blacklisted_location[deploy_index])
 
 
 
@@ -108,22 +113,12 @@ class DataStorage:
         return target_location
 
 
-    def is_attack_effective(self, previous_attacked_locations):
+    def is_attack_effective(self):
         MP_used_for_attack = self.previous_self_MP - self.cur_game_state.get_resource(MP, 0)
+        gamelib.debug_write("the list is {}".format(self.previous_attack_location))
         if self.enemy_health == self.cur_game_state.enemy_health:
-            self.blacklisted_location.extend(previous_attacked_locations)
-            if previous_attacked_locations[0] <= 13:
-                new_location = [previous_attacked_locations[0] - 1, previous_attacked_locations[1] + 1]
-                self.blacklisted_location.extend(new_location)
-                if previous_attacked_locations[0] != 13:
-                    new_location = [previous_attacked_locations[0] + 1, previous_attacked_locations[1] - 1]
-                    self.blacklisted_location.extend(new_location)
-            else:
-                new_location = [previous_attacked_locations[0] + 1, previous_attacked_locations[1] + 1]
-                self.blacklisted_location.extend(new_location)
-                if previous_attacked_locations[0] != 14:
-                    new_location = [previous_attacked_locations[0] - 1, previous_attacked_locations[1] - 1]
-                    self.blacklisted_location.extend(new_location)
+            self.blacklisted_location.extend(self.previous_attack_location)
+            self.min_mobile_units_needed += 1
         else:
             self.min_mobile_units_needed = (MP_used_for_attack + self.min_mobile_units_needed) / 2
 
