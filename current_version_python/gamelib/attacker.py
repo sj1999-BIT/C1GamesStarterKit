@@ -34,24 +34,22 @@ class Attacker:
 
                 # check if the locations present are not recorded as blacklist
                 list_of_locations = best_location.get(min_val)
+                for illegal_locations in past_data_stored.blacklisted_location:
+                    list_of_locations.remove(illegal_locations)
+                if len(list_of_locations) == 0:
+                    pass
 
-                if len(list_of_locations) > 0:
-                    for location in list_of_locations:
-                        if location not in past_data_stored.blacklisted_location:
-                            if min_val == 0:
-                                # attack the weakness immediately
-                                gamelib.debug_write("spawn scouts")
-                                game_state.attempt_spawn(SCOUT, self.get_a_location(best_location.get(min_val)), floor(game_state.get_resource(MP, 0)))
-                                self.cur_attacked_location.extend([self.get_a_location(best_location.get(min_val)), ])
-                                gamelib.debug_write("47 cur_attacked_location is {}".format(self.cur_attacked_location))
-                                break
-                            else:
-                                if safest_path_val < 0 or min_val < safest_path_val:
-                                    safest_path_val = min_val
+                if min_val == 0:
+                    # attack the weakness immediately
+                    gamelib.debug_write("spawn scouts")
+                    game_state.attempt_spawn(SCOUT, best_location.get(min_val), floor(game_state.get_resource(MP, 0)))
+                else:
+                    if safest_path_val < 0 or min_val < safest_path_val:
+                        safest_path_val = min_val
 
             if safest_path_val > 0:
                 tuple_combo = self.get_health_for_combo(game_state)
-                if best_location.get(safest_path_val) is not None and len(best_location.get(safest_path_val)) > 0:
+                if best_location.get(safest_path_val) is not None:
                     target_spawn_location = self.get_a_location(best_location.get(safest_path_val))
                     if tuple_combo[2] > safest_path_val:
                         # the combo can punch through opponent frontline
@@ -60,12 +58,8 @@ class Attacker:
                     else:
                         demolisher_count = self.demolish_strategy(game_state, past_data_stored)
                         # since we cannot tell if the demolisher is effective, we can only guess
-                        if demolisher_count > 2:
+                        if demolisher_count > 0:
                             game_state.attempt_spawn(DEMOLISHER, target_spawn_location, demolisher_count)
-                            self.cur_attacked_location.extend([target_spawn_location, ])
-                            gamelib.debug_write("67 cur_attacked_location is {}".format(self.cur_attacked_location))
-
-            past_data_stored.previous_attack_location = self.cur_attacked_location
 
     def demolish_strategy(self, game_state, past_data_stored):
         """
@@ -136,8 +130,6 @@ class Attacker:
         """
 
         game_state.attempt_spawn(DEMOLISHER, location, tuple_combo[1])
-        self.cur_attacked_location.extend([location, ])
-        gamelib.debug_write("141 cur_attacked_location is {}".format(self.cur_attacked_location))
 
         if location[0] <= 13:
             if location[0] == 13:
@@ -151,8 +143,6 @@ class Attacker:
             else:
                 new_location = [location[0]-1, location[1]-1]
             game_state.attempt_spawn(SCOUT, new_location, tuple_combo[0])
-        self.cur_attacked_location.extend([new_location, ])
-        gamelib.debug_write("156 cur_attacked_location is {}".format(self.cur_attacked_location))
         gamelib.debug_write("new location to spawn scout at: {}".format(new_location))
 
     def least_damage_spawn_location(self, game_state, location_options):
