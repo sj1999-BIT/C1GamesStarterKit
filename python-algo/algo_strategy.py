@@ -92,12 +92,11 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         self.defender.update_state(game_state, self.scored_on_locations)
 
-        self.past_history_stored.learning_and_update_info(game_state, self.damaged_turrets)
-
-
         # creation of the three objects
         attacker = Attacker(self.config)
         observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets, self.omitted_spawn_locations, self.opponent_mp)
+
+        self.past_history_stored.learning_and_update_info(game_state, self.damaged_turrets, observer)
 
         attacker.offense_decision(game_state, observer.min_health_for_attack(game_state), self.past_history_stored)
 
