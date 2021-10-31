@@ -69,8 +69,6 @@ class Attacker:
                                 game_state.attempt_spawn(DEMOLISHER, target_spawn_location, demolisher_count)
                                 self.cur_attacked_location.extend([target_spawn_location, ])
                                 gamelib.debug_write("67 cur_attacked_location is {}".format(self.cur_attacked_location))
-
-
             past_data_stored.previous_attack_location = self.cur_attacked_location
             past_data_stored.MP_used_for_attack = self.MP_spent_attacking
             self.MP_spent_attacking = 0
