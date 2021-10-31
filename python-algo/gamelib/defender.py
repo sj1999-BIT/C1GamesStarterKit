@@ -123,7 +123,7 @@ class Defender:
             self.game_state.attempt_spawn(WALL, (12 + x, 1))
 
     def build_remaining_front_walls(self):
-        for i in range(13):
+        for i in range(10):
             self.game_state.attempt_spawn(WALL, (i, self.game_state.HALF_ARENA - 1))
             self.game_state.attempt_spawn(WALL, (27 - i, self.game_state.HALF_ARENA - 1))
             self.game_state.attempt_upgrade((i, self.game_state.HALF_ARENA - 1))
