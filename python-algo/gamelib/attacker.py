@@ -18,50 +18,41 @@ class Attacker:
         SP = 0
         self.cur_attacked_location = []
 
-    def offense_decision(self, game_state, best_location, past_data_stored):
+    def offense_decision(self, game_state, no_dmg_location, best_location, past_data_stored):
         """
         :param past_data_stored: the dataStorageUnit presented in the system
         :param game_state:
         :param best_location: a dictionary containing a min_value for keys and an array of locations
         :return:
         """
+        gamelib.debug_write("28 The MP for now is {}".format(game_state.get_resource(MP, 0)))
         # only record the attacked location this round
         self.cur_attacked_location = []
-        safest_path_val = -10
         # gamelib.debug_write("dictionary location is {}".format(len(best_location.keys())))
         if game_state.get_resource(MP, 0) > past_data_stored.min_mobile_units_needed:
             if past_data_stored.is_delay_attack_mode:
                 min_health, spawn_location = self.least_damage_spawn_location(game_state, [[13, 0], [14, 0]])
-                if self.get_health_for_combo(game_state)[2] > min_health / 2:
-                    tuple_combo = self.spawn_demo_scout_combo()
+                tuple_combo = self.get_health_for_combo(game_state)
+                if tuple_combo[2] > min_health / 2:
                     self.spawn_demo_scout_combo(spawn_location, game_state, tuple_combo)
             else:
-                for min_val in best_location:
+                if len(no_dmg_location) > 0 and game_state.get_resource(SP, 1) < 6:
+                    # attack the weakness immediately
+                    gamelib.debug_write("42 spawn scouts")
+                    game_state.attempt_spawn(SCOUT, no_dmg_location,
+                                             floor(game_state.get_resource(MP, 0)))
+                    self.cur_attacked_location.extend([no_dmg_location, ])
+                    gamelib.debug_write("47 cur_attacked_location is {}".format(self.cur_attacked_location))
 
+                for min_val in best_location:
                     # check if the locations present are not recorded as blacklist
                     list_of_locations = best_location.get(min_val)
-
-                    if len(list_of_locations) > 0:
-                        for location in list_of_locations:
-                            if location not in past_data_stored.blacklisted_location:
-                                if min_val == 0 and game_state.get_resource(SP, 1) < 6:
-                                    # attack the weakness immediately
-                                    gamelib.debug_write("spawn scouts")
-                                    game_state.attempt_spawn(SCOUT, self.get_a_location(best_location.get(min_val)), floor(game_state.get_resource(MP, 0)))
-                                    self.cur_attacked_location.extend([self.get_a_location(best_location.get(min_val)), ])
-                                    gamelib.debug_write("47 cur_attacked_location is {}".format(self.cur_attacked_location))
-                                    break
-                                else:
-                                    if safest_path_val < 0 or min_val < safest_path_val:
-                                        safest_path_val = min_val
-
-                if safest_path_val > 0:
                     tuple_combo = self.get_health_for_combo(game_state)
-                    if best_location.get(safest_path_val) is not None and len(best_location.get(safest_path_val)) > 0:
-                        target_spawn_location = self.get_a_location(best_location.get(safest_path_val))
-                        if tuple_combo[2] > safest_path_val:
+                    if best_location.get(min_val) is not None and len(best_location.get(min_val)) > 0:
+                        target_spawn_location = self.get_a_location(best_location.get(min_val))
+                        if tuple_combo[2] > min_val / 2:
                             # the combo can punch through opponent frontline
-                            gamelib.debug_write("bes location is {}".format(safest_path_val))
+                            gamelib.debug_write("63 bes location is {}".format(min_val))
                             self.spawn_demo_scout_combo(target_spawn_location, game_state, tuple_combo)
                         else:
                             demolisher_count = self.demolish_strategy(game_state, past_data_stored)
@@ -70,7 +61,9 @@ class Attacker:
                                 game_state.attempt_spawn(DEMOLISHER, target_spawn_location, demolisher_count)
                                 self.cur_attacked_location.extend([target_spawn_location, ])
                                 gamelib.debug_write("67 cur_attacked_location is {}".format(self.cur_attacked_location))
-
+            if past_data_stored.no_attack_rounds == past_data_stored.fail_attack_limit:
+                self.forced_attack_strategy(game_state)
+                gamelib.debug_write("74 stupid attack need to attack now")
             past_data_stored.previous_attack_location = self.cur_attacked_location
 
     def demolish_strategy(self, game_state, past_data_stored):
@@ -110,7 +103,14 @@ class Attacker:
         if best_location is not None and game_state.get_resource(SP, 0) < 5 \
                 and game_state.get_resource(MP, 0) > past_data_stored.max_MP_enemy_needed:
             game_state.attempt_spawn(INTERCEPTOR, best_location, 1)
-        past_data_stored.cur_interceptor_location.extend([best_location, ])
+            past_data_stored.cur_interceptor_location.extend([best_location, ])
+            past_data_stored.previous_opponent_MP -= 1
+
+    def forced_attack_strategy(self, game_state):
+        spawn_locations = [[13, 0], [14, 0]]
+        location = self.least_damage_spawn_location(game_state, spawn_locations)[1]
+        combo = self.get_health_for_combo(game_state)
+        self.spawn_demo_scout_combo(location, game_state, combo)
 
 
     def get_a_location(self, location_array):

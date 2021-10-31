@@ -66,6 +66,10 @@ class DataStorage:
         self.fail_attack_limit = 0
         self.is_delay_attack_mode = False
 
+        # set a limit for number of rounds not attacking
+        self.no_attack_limit = 3
+        self.no_attack_rounds = 0
+
 
 
     def learning_and_update_info(self, game_state, attacked_locations, observer):
@@ -107,6 +111,14 @@ class DataStorage:
             else:
                 self.fail_attack_limit = False
 
+        if self.previous_self_MP == 0.75 * (self.cur_game_state.get_resource(MP, 0) + 5):
+            self.no_attack_rounds += 1
+            if self.no_attack_rounds > self.fail_attack_limit:
+                self.no_attack_rounds = 0
+        else:
+            self.is_attack_effective()
+
+
 
 
 
@@ -115,7 +127,7 @@ class DataStorage:
         updates the coordinates potential chance of attack
         :param attacked_location:
         """
-        gamelib.debug_write("location for future attack".format(attacked_locations))
+        gamelib.debug_write("130 location for future attack".format(attacked_locations))
         for location in attacked_locations:
             tuple_location = tuple(location)
             if tuple_location in self.chance_of_attack.keys():
