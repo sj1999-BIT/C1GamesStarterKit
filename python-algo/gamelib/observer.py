@@ -222,10 +222,16 @@ class Observer:
             if location > 13:
                 all_left = False
 
-        average = sum(location_count) / len(location_count)
+        counter = 0
+        temp = location_count[0]
+        for i in location_count:
+            curr_frequency = location_count.count(i)
+            if (curr_frequency > counter):
+                counter = curr_frequency
+                temp = i
 
         if all_right or all_left:
-            return average
+            return temp
         else:
             return -1
 
