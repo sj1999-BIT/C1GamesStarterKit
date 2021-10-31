@@ -46,7 +46,7 @@ class Observer:
         # Get the damage estimate each path will take
         for location in location_options:
             path = game_state.find_path_to_edge(location)
-            if len(path) == 0:
+            if len(path) < 2:
                 continue
             damage = 0
             for path_location in path:
@@ -97,7 +97,7 @@ class Observer:
                 # Get number of enemy turrets that can attack each location and multiply by turret damage
                 damage += len(game_state.get_attackers(path_location, 0)) * gamelib.GameUnit(TURRET,
                                                                                              game_state.config).damage_i
-            if damage == 0:
+            if damage == 0 and len(path) > 2:
                 spawn_location.append(location)
 
         # Now just return the spawn locations that do not take damage
@@ -167,8 +167,9 @@ class Observer:
             damage = 0
             for path_location in path:
                 # Get number of friendly turrets that can attack each location and multiply by turret damage
-                damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,
-                                                                                             game_state.config).damage_i
+                damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,game_state.config).damage_i
+            if len(path) < 2:
+                continue
             if damage < min_damage:
                 min_damage = damage
                 intercepter_spawn_location.clear()
