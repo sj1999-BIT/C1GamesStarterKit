@@ -125,7 +125,7 @@ class Observer:
                 # Get number of friendly turrets that can attack each location and multiply by turret damage
                 damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,
                                                                                              game_state.config).damage_i
-            if damage == 0:
+            if damage == 0 and len(path) > 2:
                 vulnerable_locations.append(path_location[-4])
 
         # Now just return the location that does not take damage
