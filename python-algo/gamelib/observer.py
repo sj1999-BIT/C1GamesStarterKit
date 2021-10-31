@@ -222,14 +222,20 @@ class Observer:
             if location > 13:
                 all_left = False
 
-        average = sum(location_count) / len(location_count)
+        counter = 0
+        temp = location_count[0]
+        for i in location_count:
+            curr_frequency = location_count.count(i)
+            if (curr_frequency > counter):
+                counter = curr_frequency
+                temp = i
 
         if all_right or all_left:
-            return average
+            return temp
         else:
             return -1
 
-    def useful_turrets(self, game_state):
+    def useless_turrets(self, game_state):
         location_options = game_state.game_map.get_edge_locations(
             game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
 
@@ -243,7 +249,27 @@ class Observer:
                 defenders = game_state.get_attackers(path_location, 1)
                 for defender in defenders:
                     useful_turrets.add(tuple([defender.x, defender.y]))
-        return useful_turrets
+        friendly_turrets = set()
+
+        all_locations = game_state.game_map.get_locations_in_range([13,13], 15)
+
+        for location in all_locations:
+            x, y = map(int, location)
+            unit = game_state.game_map[x, y]
+            if len(unit) == 0:
+                continue
+            else:
+                unit = unit[0]
+            gamelib.debug_write(unit)
+            gamelib.debug_write(unit.player_index)
+            gamelib.debug_write(unit.unit_type)
+            if unit.player_index == 0 and unit.unit_type == "DF":
+                friendly_turrets.add(tuple([x, y]))
+
+        useless_turrets = friendly_turrets.difference(useful_turrets)
+        useless_turrets = list(useless_turrets)
+
+        return useless_turrets
 
     def average_opponent_attack_mp(self):
         return sum(self.opponent_mp)/len(self.opponent_mp)
