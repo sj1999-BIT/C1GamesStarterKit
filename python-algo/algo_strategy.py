@@ -240,6 +240,9 @@ class AlgoStrategy(gamelib.AlgoCore):
             if (is_scout or is_demolisher) and not unit_owner_self:
                 opponent_attacked = True
 
+        if len(spawns) == 0:
+            opponent_attacked = True
+
         if not opponent_attacked:
             self.opponent_mp.pop()
 

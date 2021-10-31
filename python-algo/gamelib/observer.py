@@ -46,6 +46,8 @@ class Observer:
         # Get the damage estimate each path will take
         for location in location_options:
             path = game_state.find_path_to_edge(location)
+            if len(path) == 0:
+                continue
             damage = 0
             for path_location in path:
                 # Get number of enemy turrets that can attack each location and multiply by turret damage
