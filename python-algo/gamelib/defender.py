@@ -47,6 +47,8 @@ class Defender:
 
         self.build_last_resort_walls()
 
+        self.build_remaining_front_walls()
+
     def defend_left_right_side(self):
         locations = []
         # Spawn walls
@@ -125,3 +127,10 @@ class Defender:
             self.game_state.attempt_upgrade((13 + x, 3))
         for i in range(2):
             self.game_state.attempt_upgrade((12 + x, 1))
+
+    def build_remaining_front_walls(self):
+        for i in range(13):
+            self.game_state.attempt_spawn(WALL, (i, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_spawn(WALL, (27 - i, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_upgrade((i, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_upgrade((27 - i, self.game_state.HALF_ARENA - 1))
