@@ -243,7 +243,27 @@ class Observer:
                 defenders = game_state.get_attackers(path_location, 1)
                 for defender in defenders:
                     useful_turrets.add(tuple([defender.x, defender.y]))
-        return useful_turrets
+        friendly_turrets = set()
+
+        all_locations = game_state.game_map.get_locations_in_range([13,13], 15)
+
+        for location in all_locations:
+            x, y = map(int, location)
+            unit = game_state.game_map[x, y]
+            if len(unit) == 0:
+                continue
+            else:
+                unit = unit[0]
+            gamelib.debug_write(unit)
+            gamelib.debug_write(unit.player_index)
+            gamelib.debug_write(unit.unit_type)
+            if unit.player_index == 0 and unit.unit_type == "DF":
+                friendly_turrets.add(tuple([x, y]))
+
+        useless_turrets = friendly_turrets.difference(useful_turrets)
+        useless_turrets = list(useless_turrets)
+
+        return useless_turrets
 
     def average_opponent_attack_mp(self):
         return sum(self.opponent_mp)/len(self.opponent_mp)

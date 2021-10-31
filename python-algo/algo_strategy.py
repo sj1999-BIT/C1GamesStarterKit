@@ -99,8 +99,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         attacker = Attacker(self.config)
         observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets, self.omitted_spawn_locations, self.opponent_mp)
         self.defender.update_state(game_state, self.scored_on_locations, self.damaged_turrets)
-        self.attacker.offense_decision(game_state, observer.min_health_for_attack(game_state), self.past_history_stored)
-
+        self.attacker.offense_decision(game_state, observer.generate_our_attacker_location(game_state), observer.min_health_for_attack(game_state), self.past_history_stored)
+        test = observer.useful_turrets(game_state)
 
     def build_defences(self, game_state):
         """
