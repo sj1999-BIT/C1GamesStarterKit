@@ -41,6 +41,8 @@ class Defender:
         # Now build reactive defenses based on where the enemy scored
         self.build_reactive_defense()
 
+        self.build_more_walls()
+
         self.support_damaged_structures()
 
     def defend_left_right_side(self):
@@ -97,3 +99,13 @@ class Defender:
                                                         (damaged_turret[0][0] + dx, damaged_turret[0][1] + dy))
                 if success:
                     break
+
+    def build_more_walls(self):
+        x_coords = [6, 22, 10, 18, 14]
+
+        # Build turrets first
+        for x in x_coords:
+            self.game_state.attempt_spawn(WALL, (x - 1, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_spawn(WALL, (x + 1, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_upgrade((x - 1, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_upgrade((x + 1, self.game_state.HALF_ARENA - 1))
