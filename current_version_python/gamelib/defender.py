@@ -43,7 +43,7 @@ class Defender:
 
         if self.analytics.is_delay_attack_mode:
             self.build_delay_attack_structures()
-
+            
         self.defend_frontline_corners()
         self.defend_frontline_center()
         self.upgrade_frontline_center()
@@ -71,6 +71,8 @@ class Defender:
         # self.build_more_walls()
         #
         self.support_damaged_structures()
+        self.remove_random_wall()
+        self.upgrade_all_turrets_and_support()
         #
         # self.build_last_resort_walls()
         #
@@ -102,19 +104,20 @@ class Defender:
         # Build a few walls first
         for dx in range(3):
             self.game_state.attempt_spawn(WALL,
-                                          ((self.game_state.ARENA_SIZE - 1) // 2 - dx, self.game_state.HALF_ARENA - 1))
+                                          ((self.game_state.ARENA_SIZE - 1) // 2 - dx, self.game_state.HALF_ARENA - 2))
             self.game_state.attempt_spawn(WALL,
-                                          ((self.game_state.ARENA_SIZE - 1) // 2 + dx, self.game_state.HALF_ARENA - 1))
+                                          ((self.game_state.ARENA_SIZE - 1) // 2 + dx, self.game_state.HALF_ARENA - 2))
 
         # Build turret next
-        self.game_state.attempt_spawn(TURRET, ((self.game_state.ARENA_SIZE - 1) // 2, self.game_state.HALF_ARENA - 2))
+
+        self.game_state.attempt_spawn(TURRET, ((self.game_state.ARENA_SIZE - 1) // 2, self.game_state.HALF_ARENA - 3))
 
         # Build remaining walls last
         for dx in range(3, 6):
             self.game_state.attempt_spawn(WALL,
-                                          ((self.game_state.ARENA_SIZE - 1) // 2 - dx, self.game_state.HALF_ARENA - 1))
+                                          ((self.game_state.ARENA_SIZE - 1) // 2 - dx, self.game_state.HALF_ARENA - 2))
             self.game_state.attempt_spawn(WALL,
-                                          ((self.game_state.ARENA_SIZE - 1) // 2 + dx, self.game_state.HALF_ARENA - 1))
+                                          ((self.game_state.ARENA_SIZE - 1) // 2 + dx, self.game_state.HALF_ARENA - 2))
 
     def upgrade_frontline_center(self):
         # Upgrade frontline center walls
@@ -127,20 +130,19 @@ class Defender:
     def defend_remaining_frontline(self):
         # Build remaining walls
         for x in range(8, 2, -1):
-            self.game_state.attempt_spawn(WALL, (x, self.game_state.HALF_ARENA - 1))
-            self.game_state.attempt_spawn(WALL, (self.game_state.ARENA_SIZE - 1 - x, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_spawn(WALL, (x, self.game_state.HALF_ARENA - 2))
+            self.game_state.attempt_spawn(WALL, (self.game_state.ARENA_SIZE - 1 - x, self.game_state.HALF_ARENA - 2))
 
         # Upgrade remaining walls
         for x in range(8, 2, -1):
-            self.game_state.attempt_upgrade((x, self.game_state.HALF_ARENA - 1))
-            self.game_state.attempt_upgrade((self.game_state.ARENA_SIZE - 1 - x, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_upgrade((x, self.game_state.HALF_ARENA - 2))
+            self.game_state.attempt_upgrade((self.game_state.ARENA_SIZE - 1 - x, self.game_state.HALF_ARENA - 2))
 
-    def remove_random_wall(self, analytics):
-        if len(analytics.previous_attack_location) > 0:
+    def remove_random_wall(self):
             while True:
                 x = random.randrange(3, self.game_state.ARENA_SIZE - 3)
                 if not self.game_state.contains_stationary_unit((x, self.game_state.HALF_ARENA - 2)):
-                    self.game_state.attempt_remove((x, self.game_state.HALF_ARENA - 1))
+                    self.game_state.attempt_remove((x, self.game_state.HALF_ARENA - 2))
                     break
 
     def build_delay_attack_structures(self):
@@ -195,13 +197,13 @@ class Defender:
 
         # Build turrets first
         for x in x_coords:
-            self.game_state.attempt_spawn(TURRET, (x, self.game_state.HALF_ARENA - 2))
-            self.game_state.attempt_spawn(WALL, (x, self.game_state.HALF_ARENA - 1))
-            self.game_state.attempt_upgrade((x, self.game_state.HALF_ARENA - 1))
+            self.game_state.attempt_spawn(TURRET, (x, self.game_state.HALF_ARENA - 3))
+            self.game_state.attempt_spawn(WALL, (x, self.game_state.HALF_ARENA - 2))
+            self.game_state.attempt_upgrade((x, self.game_state.HALF_ARENA - 2))
 
         # Build supports afterwards
         for x in x_coords:
-            self.game_state.attempt_spawn(SUPPORT, (x, self.game_state.HALF_ARENA - 3))
+            self.game_state.attempt_spawn(SUPPORT, (x, self.game_state.HALF_ARENA - 4))
 
     def build_reactive_defense(self):
         """
@@ -216,13 +218,9 @@ class Defender:
 
     def support_damaged_structures(self):
         # Try 4 different positions
-        deltas = ((0, -1), (1, 0), (-1, 0), (0, 1))
+        deltas = (0, -1)
         for damaged_turret in self.damaged_turrets:
-            for dx, dy in deltas:
-                success = self.game_state.attempt_spawn(SUPPORT,
-                                                        (damaged_turret[0][0] + dx, damaged_turret[0][1] + dy))
-                if success:
-                    break
+            self.game_state.attempt_spawn(SUPPORT, (damaged_turret[0][0] + deltas[0], damaged_turret[0][1] + deltas[1]))
 
     def build_more_walls(self):
         x_coords = [6, 22, 10, 18, 14]
@@ -248,3 +246,23 @@ class Defender:
             self.game_state.attempt_spawn(WALL, (27 - i, self.game_state.HALF_ARENA - 1))
             self.game_state.attempt_upgrade((i, self.game_state.HALF_ARENA - 1))
             self.game_state.attempt_upgrade((27 - i, self.game_state.HALF_ARENA - 1))
+
+    def upgrade_all_turrets_and_support(self):
+        locations = []
+        # Build turrets next
+        self.game_state.attempt_upgrade((1, self.game_state.HALF_ARENA - 2))
+        locations.extend([list((1, self.game_state.HALF_ARENA - 2)), ])
+        self.game_state.attempt_upgrade((self.game_state.ARENA_SIZE - 2, self.game_state.HALF_ARENA - 2))
+        locations.extend([list((self.game_state.ARENA_SIZE - 2, self.game_state.HALF_ARENA - 2)), ])
+        self.game_state.attempt_upgrade(((self.game_state.ARENA_SIZE - 1) // 2, self.game_state.HALF_ARENA - 3))
+        locations.extend([list(((self.game_state.ARENA_SIZE - 1) // 2, self.game_state.HALF_ARENA - 3)), ])
+
+        x_coords = [6, 22, 10, 18, 14]
+
+        # Build turrets first
+        for x in x_coords:
+            self.game_state.attempt_upgrade((x, self.game_state.HALF_ARENA - 3))
+            locations.extend([list((x, self.game_state.HALF_ARENA - 3)), ])
+
+        for location in locations:
+            self.game_state.attempt_upgrade((location[0], location[1] - 1))

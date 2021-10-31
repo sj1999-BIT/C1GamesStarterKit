@@ -72,8 +72,11 @@ class DataStorage:
         self.no_rounds_no_attack = 0
         self.MP_used_for_attack = 0
 
-        # set a list of locations of useless turrets to be removed\
-        self.locations_of_useless_turret = []
+        # set a list of locations of useless turrets to be removed
+        self.location_of_all_turrets = []
+        # self.locations_of_useless_turret = []
+
+
 
 
 
@@ -113,7 +116,7 @@ class DataStorage:
         if len(self.previous_attack_location) > 0:
             self.is_attack_effective()
 
-        self.locations_of_useless_turret = observer.useless_turrets(game_state)
+        # self.locations_of_useless_turret = observer.useless_turrets(game_state)
 
 
 

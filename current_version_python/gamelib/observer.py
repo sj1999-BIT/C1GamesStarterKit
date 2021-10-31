@@ -235,6 +235,7 @@ class Observer:
         else:
             return -1
 
+    """
     def useless_turrets(self, game_state):
         location_options = game_state.game_map.get_edge_locations(
             game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
@@ -270,6 +271,7 @@ class Observer:
         useless_turrets = list(useless_turrets)
 
         return useless_turrets
+    """
 
     def average_opponent_attack_mp(self):
         return sum(self.opponent_mp)/len(self.opponent_mp)

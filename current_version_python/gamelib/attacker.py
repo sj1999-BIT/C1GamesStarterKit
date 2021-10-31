@@ -29,6 +29,8 @@ class Attacker:
         :param best_location: a dictionary containing a min_value for keys and an array of locations
         :return:
         """
+        if game_state.turn_number < 5:
+            self.stall_with_interceptors(game_state)
         gamelib.debug_write("28 The MP for now is {}".format(game_state.get_resource(MP, 0)))
         # only record the attacked location this round
         self.cur_attacked_location = []
@@ -208,3 +210,7 @@ class Attacker:
             if not game_state.contains_stationary_unit(location):
                 filtered.append(location)
         return filtered
+
+    def stall_with_interceptors(self, game_state):
+
+        game_state.attempt_spawn(INTERCEPTOR, [[20, 0], [7, 0]], 1)
