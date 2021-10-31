@@ -39,7 +39,6 @@ class Defender:
         self.analytics = analytics
         self.scored_on_locations = scored_on_locations
         self.damaged_turrets = list(sorted(list(damaged_turrets.items()), key=lambda x: x[1], reverse=True))
-        #self.locations_to_be_removed = analytics.locations_of_useless_turret
 
         if self.analytics.is_delay_attack_mode:
             self.build_delay_attack_structures()
@@ -47,37 +46,24 @@ class Defender:
         self.defend_frontline_corners()
         self.defend_frontline_center()
         self.upgrade_frontline_center()
-        self.defend_remaining_frontline()
+        # self.defend_remaining_frontline()
 
-        # Build left interceptor zone
-        for dx in range(3):
-            self.game_state.attempt_spawn(WALL, (3 + dx, self.game_state.HALF_ARENA - 4))
-        self.game_state.attempt_spawn(WALL, (6, self.game_state.HALF_ARENA - 5))
-        for dy in range(3):
-            self.game_state.attempt_spawn(WALL, (7, self.game_state.HALF_ARENA - 6 - dy))
+        if self.analytics.is_delay_attack_mode:
+            self.remove_random_wall()
 
-        # Build right interceptor zone
-        for dx in range(3):
-            self.game_state.attempt_spawn(WALL, (self.game_state.ARENA_SIZE - 4 - dx, self.game_state.HALF_ARENA - 4))
-        self.game_state.attempt_spawn(WALL, (self.game_state.ARENA_SIZE - 7, self.game_state.HALF_ARENA - 5))
-        for dy in range(3):
-            self.game_state.attempt_spawn(WALL, (self.game_state.ARENA_SIZE - 8, self.game_state.HALF_ARENA - 6 - dy))
-
-        self.defend_center_region()
+        # self.defend_left_right_side()
+        # self.defend_center_region()
         #
         # # Now build reactive defenses based on where the enemy scored
         # self.build_reactive_defense()
         #
         # self.build_more_walls()
         #
-        self.support_damaged_structures()
+        # self.support_damaged_structures()
         #
         # self.build_last_resort_walls()
         #
         # self.build_remaining_front_walls()
-
-        # self.defend_left_right_side()
-        # self.defend_center_region()
 
     def defend_frontline_corners(self):
         # Build walls first
@@ -126,22 +112,21 @@ class Defender:
 
     def defend_remaining_frontline(self):
         # Build remaining walls
-        for x in range(8, 2, -1):
+        for x in range(7, 3, -1):
             self.game_state.attempt_spawn(WALL, (x, self.game_state.HALF_ARENA - 1))
             self.game_state.attempt_spawn(WALL, (self.game_state.ARENA_SIZE - 1 - x, self.game_state.HALF_ARENA - 1))
 
         # Upgrade remaining walls
-        for x in range(8, 2, -1):
+        for x in range(8, 3, -1):
             self.game_state.attempt_upgrade((x, self.game_state.HALF_ARENA - 1))
             self.game_state.attempt_upgrade((self.game_state.ARENA_SIZE - 1 - x, self.game_state.HALF_ARENA - 1))
 
-    def remove_random_wall(self, analytics):
-        if len(analytics.previous_attack_location) > 0:
-            while True:
-                x = random.randrange(3, self.game_state.ARENA_SIZE - 3)
-                if not self.game_state.contains_stationary_unit((x, self.game_state.HALF_ARENA - 2)):
-                    self.game_state.attempt_remove((x, self.game_state.HALF_ARENA - 1))
-                    break
+    def remove_random_wall(self):
+        while True:
+            x = random.randrange(3, self.game_state.ARENA_SIZE - 3)
+            if not self.game_state.contains_stationary_unit((x, self.game_state.HALF_ARENA - 2)):
+                self.game_state.attempt_remove((x, self.game_state.HALF_ARENA - 1))
+                break
 
     def build_delay_attack_structures(self):
         # Build delay attack walls
@@ -185,9 +170,6 @@ class Defender:
         locations = []
         locations.append((2, self.game_state.HALF_ARENA - 2))
         locations.append((self.game_state.ARENA_SIZE - 3, self.game_state.HALF_ARENA - 2))
-        for removed_locations in self.locations_to_be_removed:
-            if removed_locations in locations:
-                locations.remove(removed_locations)
         self.game_state.attempt_spawn(TURRET, locations)
 
     def defend_center_region(self):

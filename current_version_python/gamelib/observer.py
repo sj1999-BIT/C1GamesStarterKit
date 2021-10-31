@@ -1,10 +1,12 @@
 import gamelib
 
 class Observer:
-    def __init__(self, config, game_state, damaged_turrets, dead_turrets):
+    def __init__(self, config, game_state, damaged_turrets, dead_turrets, omitted_spawn_locations, opponent_mp):
         self.game_state = game_state
         self.damaged_turrets = damaged_turrets
         self.dead_turrets = dead_turrets
+        self.omitted_spawn_locations = omitted_spawn_locations
+        self.opponent_mp = opponent_mp
 
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, REMOVE, UPGRADE, STRUCTURE_TYPES, ALL_UNITS, UNIT_TYPE_TO_INDEX, MP, SP
         UNIT_TYPE_TO_INDEX = {}
@@ -39,10 +41,13 @@ class Observer:
         # Remove locations that are blocked by our own structures
         # since we can't deploy units there.
         location_options = self.filter_blocked_locations(location_options, game_state)
+        location_options = self.filter_omitted_locations(location_options, game_state)
 
         # Get the damage estimate each path will take
         for location in location_options:
             path = game_state.find_path_to_edge(location)
+            if len(path) < 2:
+                continue
             damage = 0
             for path_location in path:
                 # Get number of enemy turrets that can attack each location and multiply by turret damage
@@ -92,7 +97,7 @@ class Observer:
                 # Get number of enemy turrets that can attack each location and multiply by turret damage
                 damage += len(game_state.get_attackers(path_location, 0)) * gamelib.GameUnit(TURRET,
                                                                                              game_state.config).damage_i
-            if damage == 0:
+            if damage == 0 and len(path) > 2:
                 spawn_location.append(location)
 
         # Now just return the spawn locations that do not take damage
@@ -120,7 +125,7 @@ class Observer:
                 # Get number of friendly turrets that can attack each location and multiply by turret damage
                 damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,
                                                                                              game_state.config).damage_i
-            if damage == 0:
+            if damage == 0 and len(path) > 2:
                 vulnerable_locations.append(path_location[-4])
 
         # Now just return the location that does not take damage
@@ -157,13 +162,14 @@ class Observer:
         # Get the damage estimate each path will take
         for location in location_options:
             path = game_state.find_path_to_edge(location)
-            edge = game_state.get_target_edge(location)
+            edge = path[-1]
 
             damage = 0
             for path_location in path:
                 # Get number of friendly turrets that can attack each location and multiply by turret damage
-                damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,
-                                                                                             game_state.config).damage_i
+                damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,game_state.config).damage_i
+            if len(path) < 2:
+                continue
             if damage < min_damage:
                 min_damage = damage
                 intercepter_spawn_location.clear()
@@ -180,3 +186,90 @@ class Observer:
             if not game_state.contains_stationary_unit(location):
                 filtered.append(location)
         return filtered
+
+    def filter_omitted_locations(self, locations, game_state):
+        filtered = []
+        for location in locations:
+            path = game_state.find_path_to_edge(location)
+            edge = path[-1]
+            ommit = False
+            for ommited_location in self.omitted_spawn_locations:
+                distance = game_state.game_map.distance_between_locations(list(ommited_location), edge)
+                if distance <= 2:
+                    ommit = True
+            if not ommit:
+                filtered.append(location)
+        return filtered
+
+    def tilted_formation(self, game_state):
+        location_options = game_state.game_map.get_edge_locations(
+            game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+
+        location_count = []
+
+        # Get the damage estimate each path will take
+        for location in location_options:
+            path = game_state.find_path_to_edge(location)
+            for path_location in path:
+                if path_location[1] == 14:
+                    location_count.append(path_location[0])
+                    break
+        all_left = True
+        all_right = True
+        for location in location_count:
+            if location <= 13:
+                all_right = False
+            if location > 13:
+                all_left = False
+
+        counter = 0
+        temp = location_count[0]
+        for i in location_count:
+            curr_frequency = location_count.count(i)
+            if (curr_frequency > counter):
+                counter = curr_frequency
+                temp = i
+
+        if all_right or all_left:
+            return temp
+        else:
+            return -1
+
+    def useless_turrets(self, game_state):
+        location_options = game_state.game_map.get_edge_locations(
+            game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+
+        useful_turrets = set()
+        # Get the damage estimate each path will take
+        for location in location_options:
+            path = game_state.find_path_to_edge(location)
+            if path == None:
+                continue
+            for path_location in path:
+                defenders = game_state.get_attackers(path_location, 1)
+                for defender in defenders:
+                    useful_turrets.add(tuple([defender.x, defender.y]))
+        friendly_turrets = set()
+
+        all_locations = game_state.game_map.get_locations_in_range([13,13], 15)
+
+        for location in all_locations:
+            x, y = map(int, location)
+            unit = game_state.game_map[x, y]
+            if len(unit) == 0:
+                continue
+            else:
+                unit = unit[0]
+            gamelib.debug_write(unit)
+            gamelib.debug_write(unit.player_index)
+            gamelib.debug_write(unit.unit_type)
+            if unit.player_index == 0 and unit.unit_type == "DF":
+                friendly_turrets.add(tuple([x, y]))
+
+        useless_turrets = friendly_turrets.difference(useful_turrets)
+        useless_turrets = list(useless_turrets)
+
+        return useless_turrets
+
+    def average_opponent_attack_mp(self):
+        return sum(self.opponent_mp)/len(self.opponent_mp)

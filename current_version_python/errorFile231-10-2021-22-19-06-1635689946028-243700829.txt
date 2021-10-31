@@ -1,0 +1,1443 @@
+Random seed: 3394641433121108572
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Not enough resources.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not spawn FF at location (21, 13). Not enough resources.
+Could not spawn FF at location (5, 13). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (7, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (21, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (5, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (23, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [2, 11], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10], [25, 11]]}
+28 The MP for now is 5.0
+current game SP 0.0
+Performing turn 1 of your custom algo strategy
+130 location for future attack
+Attempted to perform pathing from blocked starting location [1, 15]
+Attempted to perform pathing from blocked starting location [0, 14]
+Attempted to perform pathing from blocked starting location [26, 15]
+Attempted to perform pathing from blocked starting location [27, 14]
+Friendly FF, health: 150.0 location: [0, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [0, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [1, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [1, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [1, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [1, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 75.0 location: [2, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 150.0 location: [2, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [2, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [2, 15] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [8, 13] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 150.0 location: [9, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 75.0 location: [9, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 150.0 location: [10, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [10, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [11, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [11, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [12, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [12, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [13, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [13, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [13, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [14, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [14, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [14, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [15, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [15, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [16, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [16, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [17, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [17, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 75.0 location: [18, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 150.0 location: [18, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [19, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [25, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 150.0 location: [25, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [25, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [25, 15] removal:  upgrade: False
+1
+FF
+Friendly DF, health: 90.0 location: [26, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [26, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [26, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [26, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [27, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [27, 14] removal:  upgrade: True
+1
+FF
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Not enough resources.
+Could not spawn FF at location (5, 13). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (21, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (5, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (23, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8]], 15.0: [[11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9]], 0.0: [[3, 10], [2, 11], [23, 9], [24, 10], [25, 11]]}
+28 The MP for now is 8.8
+current game SP 0.0
+Performing turn 2 of your custom algo strategy
+130 location for future attack
+Attempted to perform pathing from blocked starting location [1, 15]
+Attempted to perform pathing from blocked starting location [0, 14]
+Attempted to perform pathing from blocked starting location [26, 15]
+Attempted to perform pathing from blocked starting location [27, 14]
+Friendly FF, health: 150.0 location: [0, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [0, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [1, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [1, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [1, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [1, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 75.0 location: [2, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 150.0 location: [2, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [2, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [2, 15] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [6, 13] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 75.0 location: [7, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [7, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 150.0 location: [8, 13] removal:  upgrade: True
+0
+FF
+Friendly FF, health: 150.0 location: [9, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [9, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [10, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [10, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [11, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [11, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [12, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [12, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [13, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [13, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [13, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [14, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [14, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [14, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [15, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [15, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [16, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [16, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [17, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [17, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [18, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [18, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 150.0 location: [19, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 75.0 location: [20, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [20, 14] removal:  upgrade: False
+1
+FF
+Enemy FF, health: 75.0 location: [21, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [25, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 150.0 location: [25, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [25, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [25, 15] removal:  upgrade: False
+1
+FF
+Friendly DF, health: 90.0 location: [26, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [26, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [26, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [26, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [27, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [27, 14] removal:  upgrade: True
+1
+FF
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]], 5.0: [[2, 11], [25, 11]]}
+28 The MP for now is 11.6
+current game SP 0.0
+Performing turn 3 of your custom algo strategy
+130 location for future attack
+Attempted to perform pathing from blocked starting location [1, 15]
+Attempted to perform pathing from blocked starting location [0, 14]
+Attempted to perform pathing from blocked starting location [26, 15]
+Attempted to perform pathing from blocked starting location [27, 14]
+Friendly FF, health: 150.0 location: [0, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [0, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [1, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [1, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [1, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [1, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 75.0 location: [2, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 150.0 location: [2, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [2, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [2, 15] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [4, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [4, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [5, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [5, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [6, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [6, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [7, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [7, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 150.0 location: [8, 13] removal:  upgrade: True
+0
+FF
+Friendly FF, health: 150.0 location: [9, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [9, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [10, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [10, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [11, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [11, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [12, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [12, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [13, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [13, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [13, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [14, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [14, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [14, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [15, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [15, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [16, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [16, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [17, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [17, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [18, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [18, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 150.0 location: [19, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 75.0 location: [20, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [20, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [21, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [21, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [22, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [22, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [23, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 75.0 location: [23, 14] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 75.0 location: [25, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 150.0 location: [25, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [25, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [25, 15] removal:  upgrade: False
+1
+FF
+Friendly DF, health: 90.0 location: [26, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [26, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [26, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [26, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [27, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [27, 14] removal:  upgrade: True
+1
+FF
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]], 10.0: [[2, 11], [25, 11]]}
+28 The MP for now is 13.7
+63 bes location is 10.0
+141 cur_attacked_location is [[25, 11]]
+156 cur_attacked_location is [[25, 11], [24, 10]]
+new location to spawn scout at: [24, 10]
+Could not remove a unit from (3, 13). Location has no structures or is enemy territory.
+current game SP 0.0
+Got scored on at: [25, 11]
+All locations: [[25, 11]]
+Got scored on at: [25, 11]
+All locations: [[25, 11], [25, 11]]
+Got scored on at: [25, 11]
+All locations: [[25, 11], [25, 11], [25, 11]]
+Got scored on at: [25, 11]
+All locations: [[25, 11], [25, 11], [25, 11], [25, 11]]
+Got scored on at: [25, 11]
+All locations: [[25, 11], [25, 11], [25, 11], [25, 11], [25, 11]]
+Got scored on at: [25, 11]
+All locations: [[25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11]]
+Got scored on at: [25, 11]
+All locations: [[25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11]]
+Got scored on at: [25, 11]
+All locations: [[25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11]]
+Got scored on at: [25, 11]
+All locations: [[25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11], [25, 11]]
+Performing turn 4 of your custom algo strategy
+130 location for future attack
+the list is [[25, 11], [24, 10]]
+Attempted to perform pathing from blocked starting location [1, 15]
+Attempted to perform pathing from blocked starting location [0, 14]
+Attempted to perform pathing from blocked starting location [26, 15]
+Attempted to perform pathing from blocked starting location [27, 14]
+Friendly FF, health: 150.0 location: [0, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [0, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [1, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [1, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [1, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [1, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 75.0 location: [2, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 138.0 location: [2, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 146.0 location: [2, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 17.0 location: [2, 15] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 130.0 location: [5, 13] removal:  upgrade: True
+0
+FF
+Friendly FF, health: 130.0 location: [6, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [6, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [7, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [7, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [8, 13] removal:  upgrade: True
+0
+FF
+Friendly FF, health: 130.0 location: [9, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 110.0 location: [9, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [10, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [10, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [11, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [11, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [12, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 110.0 location: [12, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [13, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [13, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [13, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [14, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [14, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [14, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 110.0 location: [15, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [15, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [16, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [16, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [17, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [17, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 110.0 location: [18, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [18, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 130.0 location: [19, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [20, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [20, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [21, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [21, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 55.0 location: [22, 13] removal:  upgrade: False
+0
+FF
+Enemy FF, health: 130.0 location: [22, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 17.0 location: [25, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 146.0 location: [25, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 138.0 location: [25, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [25, 15] removal:  upgrade: False
+1
+FF
+Friendly DF, health: 90.0 location: [26, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [26, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [26, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [26, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [27, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [27, 14] removal:  upgrade: True
+1
+FF
+the list is [[25, 11], [24, 10]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]], 5.0: [[2, 11], [25, 11]]}
+28 The MP for now is 5.5
+current game SP 1.0
+Performing turn 5 of your custom algo strategy
+130 location for future attack
+the list is [[25, 11], [24, 10]]
+Attempted to perform pathing from blocked starting location [1, 15]
+Attempted to perform pathing from blocked starting location [0, 14]
+Attempted to perform pathing from blocked starting location [26, 15]
+Attempted to perform pathing from blocked starting location [27, 14]
+Friendly FF, health: 150.0 location: [0, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [0, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [1, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [1, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [1, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [1, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 75.0 location: [2, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 138.0 location: [2, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 146.0 location: [2, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 17.0 location: [2, 15] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 150.0 location: [4, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [4, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [5, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [5, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [5, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [6, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [6, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [6, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [7, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [7, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [8, 13] removal:  upgrade: True
+0
+FF
+Friendly FF, health: 130.0 location: [9, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 110.0 location: [9, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [9, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [10, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [10, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [10, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [11, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [11, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [12, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 110.0 location: [12, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [13, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [13, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [13, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 130.0 location: [14, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [14, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 110.0 location: [15, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [15, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [16, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [16, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [17, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [17, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [17, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [18, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 110.0 location: [18, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [19, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [20, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [20, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [21, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [21, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [21, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [22, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [22, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [22, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [23, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [23, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 17.0 location: [25, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 146.0 location: [25, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 138.0 location: [25, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [25, 15] removal:  upgrade: False
+1
+FF
+Friendly DF, health: 90.0 location: [26, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [26, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [26, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [26, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [27, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [27, 14] removal:  upgrade: True
+1
+FF
+the list is [[25, 11], [24, 10]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10]], 45.0: [[2, 11]], 35.0: [[14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10], [25, 11]]}
+28 The MP for now is 9.1
+current game SP 3.3
+Performing turn 6 of your custom algo strategy
+130 location for future attack
+the list is [[25, 11], [24, 10]]
+Attempted to perform pathing from blocked starting location [1, 15]
+Attempted to perform pathing from blocked starting location [0, 14]
+Attempted to perform pathing from blocked starting location [26, 15]
+Attempted to perform pathing from blocked starting location [27, 14]
+Friendly FF, health: 150.0 location: [0, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [0, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [1, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [1, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [1, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [1, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 75.0 location: [2, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 138.0 location: [2, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 146.0 location: [2, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 17.0 location: [2, 15] removal:  upgrade: False
+1
+FF
+Friendly FF, health: 150.0 location: [4, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [4, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [5, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [5, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [5, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [6, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [6, 13] removal:  upgrade: True
+0
+FF
+Friendly FF, health: 130.0 location: [7, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [7, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [8, 13] removal:  upgrade: True
+0
+FF
+Friendly FF, health: 130.0 location: [9, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 110.0 location: [9, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [9, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [10, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [10, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [10, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [11, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [11, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [12, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 110.0 location: [12, 14] removal:  upgrade: True
+1
+FF
+Friendly DF, health: 90.0 location: [13, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [13, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [13, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [13, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [14, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [14, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [14, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [14, 15] removal:  upgrade: False
+1
+DF
+Enemy FF, health: 130.0 location: [15, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [16, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [16, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [17, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [17, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [17, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [18, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 110.0 location: [18, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [18, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 130.0 location: [19, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [20, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [20, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 130.0 location: [21, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [21, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [21, 15] removal:  upgrade: False
+1
+DF
+Friendly DF, health: 90.0 location: [22, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 130.0 location: [22, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 130.0 location: [22, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 150.0 location: [23, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [23, 14] removal:  upgrade: True
+1
+FF
+Friendly FF, health: 17.0 location: [25, 12] removal:  upgrade: False
+0
+FF
+Friendly FF, health: 146.0 location: [25, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 138.0 location: [25, 14] removal:  upgrade: True
+1
+FF
+Enemy FF, health: 75.0 location: [25, 15] removal:  upgrade: False
+1
+FF
+Friendly DF, health: 90.0 location: [26, 12] removal:  upgrade: False
+0
+DF
+Friendly FF, health: 150.0 location: [26, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [26, 14] removal:  upgrade: True
+1
+FF
+Enemy DF, health: 90.0 location: [26, 15] removal:  upgrade: False
+1
+DF
+Friendly FF, health: 150.0 location: [27, 13] removal:  upgrade: True
+0
+FF
+Enemy FF, health: 150.0 location: [27, 14] removal:  upgrade: True
+1
+FF
+the list is [[25, 11], [24, 10]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9]], 45.0: [[3, 10], [2, 11]], 35.0: [[14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10], [25, 11]]}
+28 The MP for now is 11.8
+current game SP 0.40000000000000036
+Traceback (most recent call last):
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\algo_strategy.py", line 239, in <module>
+    algo.start()
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\algo_strategy.py", line 70, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\gamelib\game_state.py", line 180, in submit_turn
+    send_command(build_string)
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\gamelib\util.py", line 30, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='gbk'>
+OSError: [Errno 22] Invalid argument

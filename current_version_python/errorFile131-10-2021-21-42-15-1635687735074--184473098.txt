@@ -1,0 +1,272 @@
+Random seed: 572734873879637283
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+spawn scouts
+47 cur_attacked_location is [[14, 0]]
+Performing turn 1 of your custom algo strategy
+location for future attack
+the list is [[14, 0]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {25.0: [[13, 0]], 50.0: [[12, 1], [11, 2]], 55.0: [[10, 3], [9, 4]], 60.0: [[8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [16, 2], [17, 3], [18, 4], [20, 6], [22, 8], [23, 9], [24, 10]], 40.0: [[14, 0], [15, 1]], 45.0: [[19, 5], [21, 7]]}
+Performing turn 2 of your custom algo strategy
+location for future attack
+the list is [[14, 0]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (22, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (10, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {25.0: [[13, 0]], 50.0: [[12, 1], [11, 2]], 55.0: [[10, 3], [9, 4], [7, 6]], 60.0: [[8, 5], [6, 7], [5, 8], [4, 9], [3, 10], [16, 2], [17, 3], [18, 4], [20, 6], [22, 8], [23, 9], [24, 10]], 40.0: [[14, 0], [15, 1]], 45.0: [[19, 5], [21, 7]]}
+bes location is 25.0
+141 cur_attacked_location is [[13, 0]]
+156 cur_attacked_location is [[13, 0], [12, 1]]
+new location to spawn scout at: [12, 1]
+Got scored on at: [3, 10]
+All locations: [[3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10], [3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10]]
+Performing turn 3 of your custom algo strategy
+location for future attack
+the list is [[13, 0], [12, 1]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn DF at location [3, 11]. Not enough resources.
+Could not spawn DF at location [3, 11]. Not enough resources.
+Could not spawn DF at location [3, 11]. Not enough resources.
+Could not spawn DF at location [3, 11]. Not enough resources.
+Could not spawn DF at location [3, 11]. Not enough resources.
+Could not spawn DF at location [3, 11]. Not enough resources.
+Could not spawn DF at location [3, 11]. Not enough resources.
+Debug: {25.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4]], 55.0: [[8, 5], [7, 6]], 60.0: [[6, 7], [5, 8], [4, 9], [3, 10], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9]], 40.0: [[14, 0], [15, 1]], 10.0: [[24, 10]]}
+bes location is 10.0
+141 cur_attacked_location is [[24, 10]]
+156 cur_attacked_location is [[24, 10], [23, 9]]
+new location to spawn scout at: [23, 9]
+Performing turn 4 of your custom algo strategy
+location for future attack
+the list is [[24, 10], [23, 9]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (22, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (10, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (18, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (14, 11). Not enough resources. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Debug: {25.0: [[13, 0]], 50.0: [[12, 1], [11, 2]], 55.0: [[10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10]], 40.0: [[14, 0], [15, 1]], 60.0: [[16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+bes location is 25.0
+141 cur_attacked_location is [[13, 0]]
+156 cur_attacked_location is [[13, 0], [12, 1]]
+new location to spawn scout at: [12, 1]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10]]
+Performing turn 5 of your custom algo strategy
+location for future attack
+the list is [[13, 0], [12, 1]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Location is blocked.
+Could not spawn EF at location (14, 11). Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Debug: {60.0: [[13, 0], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]], 75.0: [[12, 1], [11, 2]], 55.0: [[10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10]], 40.0: [[14, 0], [15, 1]]}
+bes location is 40.0
+141 cur_attacked_location is [[15, 1]]
+156 cur_attacked_location is [[15, 1], [14, 0]]
+new location to spawn scout at: [14, 0]
+Got scored on at: [24, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [24, 10]]
+Got scored on at: [24, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [24, 10], [24, 10]]
+Got scored on at: [24, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [24, 10], [24, 10], [24, 10]]
+Got scored on at: [24, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [24, 10], [24, 10], [24, 10], [24, 10]]
+Got scored on at: [24, 10]
+All locations: [[3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [3, 10], [24, 10], [24, 10], [24, 10], [24, 10], [24, 10]]
+Performing turn 6 of your custom algo strategy
+location for future attack
+the list is [[15, 1], [14, 0]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Location is blocked.
+Could not spawn EF at location (14, 11). Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [3, 11]. Location is blocked.
+Could not spawn DF at location [24, 11]. Location is blocked.
+Could not spawn DF at location [24, 11]. Location is blocked.
+Could not spawn DF at location [24, 11]. Location is blocked.
+Could not spawn DF at location [24, 11]. Location is blocked.
+Debug: {60.0: [[13, 0], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]], 75.0: [[12, 1], [11, 2]], 55.0: [[10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10]], 40.0: [[14, 0], [15, 1]]}
+bes location is 40.0
+141 cur_attacked_location is [[14, 0]]
+156 cur_attacked_location is [[14, 0], [15, 1]]
+new location to spawn scout at: [15, 1]
+Traceback (most recent call last):
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\algo_strategy.py", line 233, in <module>
+    algo.start()
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\gamelib\algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\algo_strategy.py", line 70, in on_turn
+    game_state.submit_turn()
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\gamelib\game_state.py", line 180, in submit_turn
+    send_command(build_string)
+  File "C:\Users\shuiz\OneDrive\Documents\GitHub\C1GamesStarterKit\current_version_python\gamelib\util.py", line 30, in send_command
+    sys.stdout.flush()
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='gbk'>
+OSError: [Errno 22] Invalid argument

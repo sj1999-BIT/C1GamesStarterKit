@@ -69,6 +69,7 @@ class DataStorage:
         # set a limit for number of rounds not attacking
         self.no_attack_limit = 3
         self.no_attack_rounds_failed = 0
+        self.no_rounds_no_attack = 0
         self.MP_used_for_attack = 0
 
 
@@ -95,7 +96,7 @@ class DataStorage:
         self.observer = observer
 
         # remove a random blacklisted location to prevent total unable to offense
-        if (len(self.blacklisted_location)) > 0:
+        if (len(self.blacklisted_location)) > 10:
             deploy_index = random.randint(0, len(self.blacklisted_location) - 1)
             self.blacklisted_location.remove(self.blacklisted_location[deploy_index])
 

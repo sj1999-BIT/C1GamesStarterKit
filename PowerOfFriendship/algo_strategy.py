@@ -93,8 +93,17 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         self.attacker.interception_strategy(game_state, self.past_history_stored,
                                             observer.spawn_location_for_intercepter(game_state))
-        self.defender.update_state(game_state, self.scored_on_locations, self.damaged_turrets)
+        self.defender.update_state(game_state, self.scored_on_locations, self.damaged_turrets, self.past_history_stored)
+
+
         # creation of the three objects
+        attacker = Attacker(self.config)
+        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets,
+                            self.past_history_stored.cur_interceptor_location, game_state.get_resource(MP, 0))
+        self.defender.update_state(game_state, self.scored_on_locations, self.damaged_turrets, self.past_history_stored)
+        self.attacker.offense_decision(game_state, observer.generate_our_attacker_location(game_state),
+                                       observer.min_health_for_attack(game_state), self.past_history_stored)
+
 
         self.attacker.offense_decision(game_state, observer.generate_our_attacker_location(game_state),
                                        observer.min_health_for_attack(game_state), self.past_history_stored)
@@ -150,6 +159,7 @@ class AlgoStrategy(gamelib.AlgoCore):
                 # Removes it from the damaged dict
                 self.damaged_turrets.pop(tuple(location), None)
                 self.dead_turrets.add(location)
+
 
 
 

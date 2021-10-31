@@ -1,0 +1,2476 @@
+Random seed: 5311578150454746276
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Not enough resources.
+Could not spawn FF at location (7, 13). Not enough resources.
+Could not upgrade a unit from (5, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (7, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (21, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources.
+Could not upgrade a unit from (21, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (23, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (11, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (17, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (13, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (15, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (8, 5). Not enough resources.
+Could not spawn FF at location (9, 5). Not enough resources.
+Could not spawn FF at location (10, 5). Not enough resources.
+Could not spawn FF at location (11, 5). Not enough resources.
+Could not spawn FF at location (12, 5). Not enough resources.
+Could not spawn FF at location (13, 5). Not enough resources.
+Could not spawn FF at location (14, 5). Not enough resources.
+Could not spawn FF at location (13, 3). Not enough resources.
+Could not spawn FF at location (14, 3). Not enough resources.
+Could not spawn FF at location (15, 3). Not enough resources.
+Could not spawn FF at location (16, 3). Not enough resources.
+Could not spawn FF at location (17, 3). Not enough resources.
+Could not spawn FF at location (12, 1). Not enough resources.
+Could not spawn FF at location (13, 1). Not enough resources.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (3, 13). Not enough resources.
+Could not spawn FF at location (24, 13). Not enough resources.
+Could not upgrade a unit from (3, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (24, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (23, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (5, 13). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (5, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not spawn FF at location (21, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (21, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (7, 13). Not enough resources.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not upgrade a unit from (7, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (8, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 11). Not enough resources.
+Could not spawn FF at location (25, 11). Not enough resources.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [2, 11], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10], [25, 11]]}
+28 The MP for now is 5.0
+Performing turn 1 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources.
+Could not upgrade a unit from (21, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (23, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (11, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (17, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (13, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (15, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (8, 5). Not enough resources.
+Could not spawn FF at location (9, 5). Not enough resources.
+Could not spawn FF at location (10, 5). Not enough resources.
+Could not spawn FF at location (11, 5). Not enough resources.
+Could not spawn FF at location (12, 5). Not enough resources.
+Could not spawn FF at location (13, 5). Not enough resources.
+Could not spawn FF at location (14, 5). Not enough resources.
+Could not spawn FF at location (13, 3). Not enough resources.
+Could not spawn FF at location (14, 3). Not enough resources.
+Could not spawn FF at location (15, 3). Not enough resources.
+Could not spawn FF at location (16, 3). Not enough resources.
+Could not spawn FF at location (17, 3). Not enough resources.
+Could not spawn FF at location (12, 1). Not enough resources.
+Could not spawn FF at location (13, 1). Not enough resources.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (3, 13). Not enough resources.
+Could not spawn FF at location (24, 13). Not enough resources.
+Could not upgrade a unit from (3, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (24, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (23, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (5, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not spawn FF at location (21, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (21, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (7, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (8, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 11). Not enough resources.
+Could not spawn FF at location (25, 11). Not enough resources.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [14, 0], [15, 1]], 15.0: [[11, 2]], 0.0: [[10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [2, 11], [23, 9], [24, 10], [25, 11]], 5.0: [[16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8]]}
+28 The MP for now is 8.8
+Performing turn 2 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (11, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (17, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (13, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (15, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (8, 5). Not enough resources.
+Could not spawn FF at location (9, 5). Not enough resources.
+Could not spawn FF at location (10, 5). Not enough resources.
+Could not spawn FF at location (11, 5). Not enough resources.
+Could not spawn FF at location (12, 5). Not enough resources.
+Could not spawn FF at location (13, 5). Not enough resources.
+Could not spawn FF at location (14, 5). Not enough resources.
+Could not spawn FF at location (13, 3). Not enough resources.
+Could not spawn FF at location (14, 3). Not enough resources.
+Could not spawn FF at location (15, 3). Not enough resources.
+Could not spawn FF at location (16, 3). Not enough resources.
+Could not spawn FF at location (17, 3). Not enough resources.
+Could not spawn FF at location (12, 1). Not enough resources.
+Could not spawn FF at location (13, 1). Not enough resources.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (3, 13). Not enough resources.
+Could not spawn FF at location (24, 13). Not enough resources.
+Could not upgrade a unit from (3, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (24, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (5, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not spawn FF at location (21, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (7, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (8, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources.
+Could not upgrade a unit from (19, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 11). Not enough resources.
+Could not spawn FF at location (25, 11). Not enough resources.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [8, 5], [7, 6], [6, 7], [5, 8], [14, 0], [15, 1]], 0.0: [[4, 9], [3, 10], [2, 11]], 5.0: [[16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10], [25, 11]]}
+28 The MP for now is 11.6
+Performing turn 3 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (11, 5). Not enough resources.
+Could not spawn FF at location (12, 5). Not enough resources.
+Could not spawn FF at location (13, 5). Not enough resources.
+Could not spawn FF at location (14, 5). Not enough resources.
+Could not spawn FF at location (13, 3). Not enough resources.
+Could not spawn FF at location (14, 3). Not enough resources.
+Could not spawn FF at location (15, 3). Not enough resources.
+Could not spawn FF at location (16, 3). Not enough resources.
+Could not spawn FF at location (17, 3). Not enough resources.
+Could not spawn FF at location (12, 1). Not enough resources.
+Could not spawn FF at location (13, 1). Not enough resources.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (3, 13). Not enough resources.
+Could not spawn FF at location (24, 13). Not enough resources.
+Could not upgrade a unit from (3, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (24, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (5, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not spawn FF at location (21, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (7, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (8, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 11). Not enough resources.
+Could not spawn FF at location (25, 11). Not enough resources.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]], 10.0: [[2, 11]], 5.0: [[25, 11]]}
+28 The MP for now is 13.7
+Performing turn 4 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (14, 3). Not enough resources.
+Could not spawn FF at location (15, 3). Not enough resources.
+Could not spawn FF at location (16, 3). Not enough resources.
+Could not spawn FF at location (17, 3). Not enough resources.
+Could not spawn FF at location (12, 1). Not enough resources.
+Could not spawn FF at location (13, 1). Not enough resources.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (3, 13). Not enough resources.
+Could not spawn FF at location (24, 13). Not enough resources.
+Could not upgrade a unit from (3, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (24, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (5, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not spawn FF at location (21, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (7, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (8, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 11). Not enough resources.
+Could not spawn FF at location (25, 11). Not enough resources.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [12, 1], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [17, 3], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]], 10.0: [[2, 11]], 5.0: [[25, 11]]}
+28 The MP for now is 15.3
+Performing turn 5 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (13, 1). Not enough resources.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (3, 13). Not enough resources.
+Could not spawn FF at location (24, 13). Not enough resources.
+Could not upgrade a unit from (3, 13). Location has no structures or is enemy territory.
+Could not upgrade a unit from (24, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (5, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not spawn FF at location (21, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (7, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (8, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 11). Not enough resources.
+Could not spawn FF at location (25, 11). Not enough resources.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {20.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]], 10.0: [[2, 11]], 5.0: [[25, 11]]}
+28 The MP for now is 16.5
+Performing turn 6 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Not enough resources.
+Could not spawn FF at location (23, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (4, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (5, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not spawn FF at location (21, 13). Not enough resources. Location is blocked.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (7, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (8, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 11). Not enough resources.
+Could not spawn FF at location (25, 11). Not enough resources.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources.
+Could not upgrade a unit from (6, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources.
+Could not upgrade a unit from (22, 13). Location has no structures or is enemy territory.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [2, 11], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10], [25, 11]]}
+28 The MP for now is 17.4
+Performing turn 7 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (7, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (20, 13). Not enough resources.
+Could not upgrade a unit from (20, 13). Location has no structures or is enemy territory.
+Could not spawn FF at location (8, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (19, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (9, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (25, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (0, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (27, 13). Not enough resources. Location is blocked.
+Could not spawn FF at location (1, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (26, 12). Not enough resources. Location is blocked.
+Could not spawn FF at location (2, 11). Not enough resources.
+Could not spawn FF at location (25, 11). Not enough resources.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [2, 11], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10], [25, 11]]}
+28 The MP for now is 18.1
+Performing turn 8 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn DF at location (2, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (25, 12). Not enough resources. Location is blocked.
+Could not spawn DF at location (6, 12). Not enough resources.
+Could not spawn FF at location (6, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (22, 12). Not enough resources.
+Could not spawn FF at location (22, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Not enough resources. Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 18.6
+Performing turn 9 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Not enough resources.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Not enough resources.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Not enough resources.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 19.0
+Performing turn 10 of your custom algo strategy
+130 location for future attack
+the list is []
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Not enough resources. Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 20.3
+63 bes location is 0.0
+141 cur_attacked_location is [[4, 9]]
+156 cur_attacked_location is [[4, 9], [5, 8]]
+new location to spawn scout at: [5, 8]
+Performing turn 11 of your custom algo strategy
+130 location for future attack
+the list is [[4, 9], [5, 8]]
+the list is [[4, 9], [5, 8]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 6.2
+Performing turn 12 of your custom algo strategy
+130 location for future attack
+the list is [[4, 9], [5, 8]]
+the list is [[4, 9], [5, 8]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (22, 11). Not enough resources.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 10.6
+Performing turn 13 of your custom algo strategy
+130 location for future attack
+the list is [[4, 9], [5, 8]]
+the list is [[4, 9], [5, 8]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 15.0
+Performing turn 14 of your custom algo strategy
+130 location for future attack
+the list is [[4, 9], [5, 8]]
+the list is [[4, 9], [5, 8]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (22, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (10, 11). Not enough resources.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 19.3
+Performing turn 15 of your custom algo strategy
+130 location for future attack
+the list is [[4, 9], [5, 8]]
+the list is [[4, 9], [5, 8]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Not enough resources.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 22.5
+63 bes location is 0.0
+141 cur_attacked_location is [[18, 4]]
+Could not spawn PI at location [17, 3]. Location is blocked.
+156 cur_attacked_location is [[18, 4], [17, 3]]
+new location to spawn scout at: [17, 3]
+Performing turn 16 of your custom algo strategy
+130 location for future attack
+the list is [[18, 4], [17, 3]]
+the list is [[18, 4], [17, 3]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn EF at location (14, 11). Not enough resources.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 23.6
+63 bes location is 0.0
+141 cur_attacked_location is [[19, 5]]
+156 cur_attacked_location is [[19, 5], [18, 4]]
+new location to spawn scout at: [18, 4]
+Performing turn 17 of your custom algo strategy
+130 location for future attack
+the list is [[19, 5], [18, 4]]
+the list is [[19, 5], [18, 4]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Location is blocked.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 10.5
+Performing turn 18 of your custom algo strategy
+130 location for future attack
+the list is [[19, 5], [18, 4]]
+the list is [[19, 5], [18, 4]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (22, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (10, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (18, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (14, 11). Not enough resources. Location is blocked.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 18.9
+Performing turn 19 of your custom algo strategy
+130 location for future attack
+the list is [[19, 5], [18, 4]]
+the list is [[19, 5], [18, 4]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (22, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (10, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (18, 11). Not enough resources. Location is blocked.
+Could not spawn EF at location (14, 11). Not enough resources. Location is blocked.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 25.2
+63 bes location is 0.0
+141 cur_attacked_location is [[24, 10]]
+156 cur_attacked_location is [[24, 10], [23, 9]]
+new location to spawn scout at: [23, 9]
+Performing turn 20 of your custom algo strategy
+130 location for future attack
+the list is [[24, 10], [23, 9]]
+the list is [[24, 10], [23, 9]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Location is blocked.
+Could not spawn EF at location (14, 11). Location is blocked.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 12.2
+Performing turn 21 of your custom algo strategy
+130 location for future attack
+the list is [[24, 10], [23, 9]]
+the list is [[24, 10], [23, 9]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Location is blocked.
+Could not spawn EF at location (14, 11). Location is blocked.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 21.2
+63 bes location is 0.0
+141 cur_attacked_location is [[15, 1]]
+156 cur_attacked_location is [[15, 1], [14, 0]]
+new location to spawn scout at: [14, 0]
+Performing turn 22 of your custom algo strategy
+130 location for future attack
+the list is [[15, 1], [14, 0]]
+the list is [[15, 1], [14, 0]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (3, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Location is blocked.
+Could not spawn EF at location (14, 11). Location is blocked.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 12.2
+Performing turn 23 of your custom algo strategy
+130 location for future attack
+the list is [[15, 1], [14, 0]]
+the list is [[15, 1], [14, 0]]
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn DF at location (1, 12). Location is blocked.
+Could not spawn DF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 12). Location is blocked.
+Could not spawn FF at location (25, 12). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (12, 13). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn DF at location (13, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn FF at location (16, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (11, 13). Location is blocked.
+Could not spawn FF at location (17, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (13, 13). Location is blocked.
+Could not spawn FF at location (15, 13). Location is blocked.
+Could not spawn FF at location (8, 5). Location is blocked.
+Could not spawn FF at location (9, 5). Location is blocked.
+Could not spawn FF at location (10, 5). Location is blocked.
+Could not spawn FF at location (11, 5). Location is blocked.
+Could not spawn FF at location (12, 5). Location is blocked.
+Could not spawn FF at location (13, 5). Location is blocked.
+Could not spawn FF at location (14, 5). Location is blocked.
+Could not spawn FF at location (13, 3). Location is blocked.
+Could not spawn FF at location (14, 3). Location is blocked.
+Could not spawn FF at location (15, 3). Location is blocked.
+Could not spawn FF at location (16, 3). Location is blocked.
+Could not spawn FF at location (17, 3). Location is blocked.
+Could not spawn FF at location (12, 1). Location is blocked.
+Could not spawn FF at location (13, 1). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (24, 13). Location is blocked.
+Could not spawn FF at location (4, 13). Location is blocked.
+Could not spawn FF at location (23, 13). Location is blocked.
+Could not spawn FF at location (5, 13). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn FF at location (21, 13). Location is blocked.
+Could not spawn FF at location (7, 13). Location is blocked.
+Could not spawn FF at location (20, 13). Location is blocked.
+Could not spawn FF at location (8, 13). Location is blocked.
+Could not spawn FF at location (19, 13). Location is blocked.
+Could not spawn FF at location (9, 13). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 13). Location is blocked.
+Could not spawn FF at location (26, 13). Location is blocked.
+Could not spawn FF at location (2, 13). Location is blocked.
+Could not spawn FF at location (25, 13). Location is blocked.
+Could not spawn FF at location (0, 13). Location is blocked.
+Could not spawn FF at location (27, 13). Location is blocked.
+Could not spawn FF at location (1, 12). Location is blocked.
+Could not spawn FF at location (26, 12). Location is blocked.
+Could not spawn FF at location (2, 11). Location is blocked.
+Could not spawn FF at location (25, 11). Location is blocked.
+Could not spawn DF at location (2, 12). Location is blocked.
+Could not spawn DF at location (25, 12). Location is blocked.
+Could not spawn DF at location (6, 12). Location is blocked.
+Could not spawn FF at location (6, 13). Location is blocked.
+Could not spawn DF at location (22, 12). Location is blocked.
+Could not spawn FF at location (22, 13). Location is blocked.
+Could not spawn DF at location (10, 12). Location is blocked.
+Could not spawn FF at location (10, 13). Location is blocked.
+Could not spawn DF at location (18, 12). Location is blocked.
+Could not spawn FF at location (18, 13). Location is blocked.
+Could not spawn DF at location (14, 12). Location is blocked.
+Could not spawn FF at location (14, 13). Location is blocked.
+Could not spawn EF at location (6, 11). Location is blocked.
+Could not spawn EF at location (22, 11). Location is blocked.
+Could not spawn EF at location (10, 11). Location is blocked.
+Could not spawn EF at location (18, 11). Location is blocked.
+Could not spawn EF at location (14, 11). Location is blocked.
+Debug: {0.0: [[13, 0], [11, 2], [10, 3], [9, 4], [7, 6], [6, 7], [5, 8], [4, 9], [3, 10], [14, 0], [15, 1], [16, 2], [18, 4], [19, 5], [20, 6], [21, 7], [22, 8], [23, 9], [24, 10]]}
+28 The MP for now is 21.2
+63 bes location is 0.0
+141 cur_attacked_location is [[20, 6]]
+156 cur_attacked_location is [[20, 6], [19, 5]]
+new location to spawn scout at: [19, 5]
+Got EOF, parent game process must have died, exiting for cleanup

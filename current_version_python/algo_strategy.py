@@ -87,15 +87,21 @@ class AlgoStrategy(gamelib.AlgoCore):
         # # Lastly, if we have spare SP, let's build some supports
         # support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
         # game_state.attempt_spawn(SUPPORT, support_locations)
-        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets)
+        observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets,
+                            self.past_history_stored.cur_interceptor_location, game_state.get_resource(MP, 1))
         self.past_history_stored.learning_and_update_info(game_state, self.scored_on_locations, observer)
         self.past_history_stored.is_attack_effective()
 
-        self.attacker.interception_strategy(game_state, self.past_history_stored)
-        self.defender.update_state(game_state, self.scored_on_locations)
+        self.attacker.interception_strategy(game_state, self.past_history_stored, observer.spawn_location_for_intercepter(game_state))
+        self.defender.update_state(game_state, self.scored_on_locations, self.damaged_turrets, self.past_history_stored)
         # creation of the three objects
 
-        self.attacker.offense_decision(game_state, observer.min_health_for_attack(game_state), self.past_history_stored)
+        self.attacker.offense_decision(game_state, observer.generate_our_attacker_location(game_state),
+                                       observer.min_health_for_attack(game_state), self.past_history_stored)
+
+        self.defender.remove_random_wall(self.past_history_stored)
+
+        gamelib.debug_write("current game SP {}".format(game_state.get_resource(SP, 0)))
 
 
     def build_defences(self, game_state):
