@@ -85,7 +85,7 @@ class Defender:
         """
         for location in self.scored_on_locations:
             # Build turret one space above so that it doesn't block our own edge spawn locations
-            build_location = [location[0], location[1] + 1]
+            build_location = [location[0], location[1] + 2]
             self.game_state.attempt_spawn(TURRET, build_location)
 
     def support_damaged_structures(self):
