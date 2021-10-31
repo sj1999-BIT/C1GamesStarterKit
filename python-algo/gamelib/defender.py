@@ -115,17 +115,17 @@ class Defender:
             self.game_state.attempt_upgrade((x + 1, self.game_state.HALF_ARENA - 1))
 
     def build_last_resort_walls(self):
-        for i in range(7):
+        for x in range(7):
             self.game_state.attempt_spawn(WALL, (8 + x, 5))
-        for i in range(5):
+        for x in range(5):
             self.game_state.attempt_spawn(WALL, (13 + x, 3))
-        for i in range(2):
+        for x in range(2):
             self.game_state.attempt_spawn(WALL, (12 + x, 1))
-        for i in range(7):
+        for x in range(7):
             self.game_state.attempt_upgrade((8 + x, 5))
-        for i in range(5):
+        for x in range(5):
             self.game_state.attempt_upgrade((13 + x, 3))
-        for i in range(2):
+        for x in range(2):
             self.game_state.attempt_upgrade((12 + x, 1))
 
     def build_remaining_front_walls(self):
