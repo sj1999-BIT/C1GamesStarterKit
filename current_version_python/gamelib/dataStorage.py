@@ -118,11 +118,6 @@ class DataStorage:
 
         # self.locations_of_useless_turret = observer.useless_turrets(game_state)
 
-
-
-
-
-
     def update_future_interception_prediction(self, attacked_locations):
         """
         updates the coordinates potential chance of attack

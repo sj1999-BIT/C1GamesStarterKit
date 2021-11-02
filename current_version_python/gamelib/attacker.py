@@ -113,9 +113,11 @@ class Attacker:
         """
         if past_data_stored.is_delay_attack_mode:
             # 7 to 5 on left, 20 to 22 on right
+            gamelib.debug_write("spawn inter")
             game_state.attempt_spawn(INTERCEPTOR, [20, 6], 1)
             game_state.attempt_spawn(INTERCEPTOR, [7, 6], 1)
         else:
+            gamelib.debug_write("looking thorugh")
             if best_location is not None and game_state.get_resource(SP, 0) < 5 \
                     and game_state.get_resource(MP, 0) > past_data_stored.max_MP_enemy_needed:
                 game_state.attempt_spawn(INTERCEPTOR, best_location, 1)

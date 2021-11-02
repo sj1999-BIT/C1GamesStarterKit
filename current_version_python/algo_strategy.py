@@ -90,39 +90,17 @@ class AlgoStrategy(gamelib.AlgoCore):
         observer = Observer(self.config, game_state, self.damaged_turrets, self.dead_turrets,
                             self.past_history_stored.cur_interceptor_location, game_state.get_resource(MP, 1))
         self.past_history_stored.learning_and_update_info(game_state, self.scored_on_locations, observer)
-        self.past_history_stored.is_attack_effective()
-
-        self.attacker.interception_strategy(game_state, self.past_history_stored, observer.spawn_location_for_intercepter(game_state))
+        gamelib.debug_write("intercept-strategy")
+        if len(self.scored_on_locations) > 0:
+            self.attacker.interception_strategy(game_state, self.past_history_stored, self.scored_on_locations[0])
+        gamelib.debug_write("defender-update")
         self.defender.update_state(game_state, self.scored_on_locations, self.damaged_turrets, self.past_history_stored)
         # creation of the three objects
-
+        gamelib.debug_write("offensive-strategy")
         self.attacker.offense_decision(game_state, observer.generate_our_attacker_location(game_state),
                                        observer.min_health_for_attack(game_state), self.past_history_stored)
 
-
-
         gamelib.debug_write("current game SP {}".format(game_state.get_resource(SP, 0)))
-
-
-    def build_defences(self, game_state):
-        """
-        Build basic defenses using hardcoded locations.
-        Remember to defend corners and avoid placing units in the front where enemy demolishers can attack them.
-        """
-        # Useful tool for setting up your base locations: https://www.kevinbai.design/terminal-map-maker
-        # More community tools available at: https://terminal.c1games.com/rules#Download
-
-        # Place turrets that attack enemy units
-        turret_locations = [[0, 13], [27, 13], [8, 11], [19, 11], [13, 11], [14, 11]]
-        # attempt_spawn will try to spawn units if we have resources, and will check if a blocking unit is already there
-        game_state.attempt_spawn(TURRET, turret_locations)
-
-        # Place walls in front of turrets to soak up damage for them
-        wall_locations = [[8, 12], [19, 12]]
-        game_state.attempt_spawn(WALL, wall_locations)
-        # upgrade walls so they soak more damage
-        game_state.attempt_upgrade(wall_locations)
-
 
 
     def least_damage_spawn_location(self, game_state, location_options):
@@ -145,15 +123,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         # Now just return the location that takes the least damage
         return location_options[damages.index(min(damages))]
 
-    def detect_enemy_unit(self, game_state, unit_type=None, valid_x=None, valid_y=None):
-        total_units = 0
-        for location in game_state.game_map:
-            if game_state.contains_stationary_unit(location):
-                for unit in game_state.game_map[location]:
-                    if unit.player_index == 1 and (unit_type is None or unit.unit_type == unit_type) and (
-                            valid_x is None or location[0] in valid_x) and (valid_y is None or location[1] in valid_y):
-                        total_units += 1
-        return total_units
 
     def filter_blocked_locations(self, locations, game_state):
         filtered = []

@@ -143,42 +143,6 @@ class Observer:
         """
         return self.dead_turrets
 
-    def spawn_location_for_intercepter(self, game_state):
-        """
-        This function will return spawn locations for intercepters. It first calculates the most probable enemy spawn location, then
-        the most suitable friendly spawn location for intercepting the attack.
-        """
-        intercepter_spawn_location = []
-        location_options = game_state.game_map.get_edge_locations(
-            game_state.game_map.TOP_LEFT) + game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
-
-        # Remove locations that are blocked by enemy structures
-        # since we can't deploy units there.
-        location_options = self.filter_blocked_locations(location_options, game_state)
-
-        vulnerable_locations = []
-
-        min_damage = 10000000
-        # Get the damage estimate each path will take
-        for location in location_options:
-            path = game_state.find_path_to_edge(location)
-            edge = path[-1]
-
-            damage = 0
-            for path_location in path:
-                # Get number of friendly turrets that can attack each location and multiply by turret damage
-                damage += len(game_state.get_attackers(path_location, 1)) * gamelib.GameUnit(TURRET,game_state.config).damage_i
-            if len(path) < 2:
-                continue
-            if damage < min_damage:
-                min_damage = damage
-                intercepter_spawn_location.clear()
-                intercepter_spawn_location.append(edge)
-            elif damage == min_damage:
-                intercepter_spawn_location.append(edge)
-
-        # Now just return the location that does not take damage
-        return intercepter_spawn_location
 
     def filter_blocked_locations(self, locations, game_state):
         filtered = []
